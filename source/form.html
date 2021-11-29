@@ -11,76 +11,193 @@
       </a>
       <nav class="navigation">
         <button class="navigation__toggle" type="button">
-          <span class="visually-hidden">Состояние меню</span>
+          <span class="visually-hidden">Открыть/Закрыть меню</span>
         </button>
         <div class="navigation__wrapper">
-          <ul class="navigation__wrapper__list">
-            <li class="navigation__wrapper__list__item">
-              <a href="index.html" class="navigation__wrapper__list__item--link">О сервисе</a>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="index.html" class="navigation__link">О сервисе</a>
             </li>
-            <li class="navigation__wrapper__list__item">
-              <a href="form.html" class="navigation__wrapper__list__item--link">Направления</a>
+            <li class="navigation__item">
+              <a href="form.html" class="navigation__link">Направления</a>
             </li>
-            <li class="navigation__wrapper__list__item">
-              <a href="catalog.html" class="navigation__wrapper__list__item--link">Попутчики</a>
+            <li class="navigation__item">
+              <a href="catalog.html" class="navigation__link">Попутчики</a>
             </li>
           </ul>
         </div>
-        <div class="navigation__login">
-          <a href="#" class="navigation__login-link">Авторизация</a>
-        </div>
-        <div class="navigation__contacts">
-          <a href="tel:+78005558628" class="navigation__contacts--phone">8 800 555-86-28</a>
-          <a href="mail@htmlacademy.ru" class="navigation__contacts--mail">mail@htmlacademy.ru</a>
-        </div>
-        <div class="navigation__socials">
-          <a href="https://www.facebook.com/htmlacademy/" class="navigation__socials--facebook">
-            <span class="visually-hidden">Ссылка на фейсбук</span>
-          </a>
-          <a href="https://vk.com/htmlacademy" class="navigation__socials--vk">
-            <span class="visually-hidden">Ссылка на вконтакте</span>
-          </a>
-          <a href="https://www.instagram.com/htmlacademy/" class="navigation__socials--instagram">
-            <span class="visually-hidden">Ссылка на инстаграм</span>
-          </a>
-        </div>
+        <ul class="navigation__user-actions user-actions">
+          <li class="user-actions__item">
+            <a href="#" class="user-actions__link">Авторизация</a>
+          </li>
+        </ul>
+        <ul class="navigation__contacts contacts">
+          <li class="contacts__item">
+            <a href="tel:+78005558628" class="contacts__link">8 800 555-86-28</a>
+          </li>
+          <li class="contacts__item">
+            <a href="mailto:mail@htmlacademy.ru" class="contacts__link">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+        <ul class="navigation__list socials">
+          <li class="socials__item">
+            <a href="https://www.facebook.com/htmlacademy/" class="socials__link">
+              <span class="visually-hidden">Ссылка на фейсбук</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="https://vk.com/htmlacademy" class="socials__link">
+              <span class="visually-hidden">Ссылка на вконтакте</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="https://www.instagram.com/htmlacademy/" class="socials__link">
+              <span class="visually-hidden">Ссылка на инстаграм</span>
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
+    <main>
+      <section class="contents">
+        <h1 class="contents__title">Направления</h1>
+      </section>
 
-    <main class="main">
-      <div class="main-title">
-        <h1 class="main-title--h1">Направления</h1>
-      </div>
-      <section class=""></section>
+      <section class="profile">
+        <div class="profile__hat">
+          <div class="profile__level level">
+            <p class="level--bold">99</p>
+            <p class="level--small">level</p>
+          </div>
+          <div class="profile__avatar">
+            <img src="img/demin.png" alt="Фотография Демина" width="100" height="100">
+          </div>
+        </div>
+        <button class="profile__button">Сменить фото</button>
+        <fieldset class="profile__fieldset">
+          <legend class="profile__legends">Тэги</legend>
+          <textarea name="tegs" id="tegs" cols="30" rows="10" class="profile__textarea">#бургер #бар #футбол #концерт #крафт</textarea>
+        </fieldset>
+        <fieldset class="profile__fieldset">
+          <legend class="profile__legends">Транспорт</legend>
+          <div class="profile__transport">
+            <button class="profile__transport__airplane active">
+              <span class="visually-hidden">Самолет</span>
+            </button>
+            <button class="profile__transport__bus active">
+              <span class="visually-hidden">Автобус</span>
+            </button>
+            <button class="profile__transport__bike">
+              <span class="visually-hidden">Велосипед</span>
+            </button>
+            <button class="profile__transport__foot active">
+              <span class="visually-hidden">Пешком</span>
+            </button>
+          </div>
+        </fieldset>
+      </section>
+
+      <section class="plans">
+        <h2 class="plans__title">Мои планы:</h2>
+        <ol class="plans__list">
+          <li class="plans__item">
+            <h3 class="plans__title-small">Франция, Италия</h3>
+            <p class="plans__text">3 попутчика</p>
+            <p class="plans__text">26 мар — 29 мар</p>
+            <button class="plans__link">Изменить</button>
+          </li>
+          <li class="plans__item">
+            <h3 class="plans__title-small">Таиланд, Индонезия</h3>
+            <p class="plans__text">1 попутчик</p>
+            <p class="plans__text">1 июл — 15 июл</p>
+            <button class="plans__link">Изменить</button>
+          </li>
+        </ol>
+      </section>
+
+      <section class="steps">
+
+        <section class="first">
+          <h2 class="first__title">Добавить план:</h2>
+          <div  class="first__content">
+            <h3 class="content__title">Шаг 1. Даты пребывания</h3>
+            <p class="content__subtitle">
+              Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку, и ее предполагаемую длительность.
+            </p>
+            <label for="companion" class="content__label">
+              <p class="content__text">ищу попутчиков:</p>
+              <p class="content__text light">чел.</p>
+              <button class="content__button">
+                <span class="visually-hidden">Меньше</span>
+              </button>
+              <input type="number" id="companion" value="2" class="content__input">
+              <button class="content__button">
+                <span class="visually-hidden">Больше</span>
+              </button>
+            </label>
+            <label for="duration" class="content__label">
+              <p class="content__text">длительность:</p>
+              <p class="content__text light">дн.</p>
+              <button class="content__button">
+                <span class="visually-hidden">Меньше</span>
+              </button>
+              <input type="number" id="duration" value="3" class="content__input">
+              <button class="content__button">
+                <span class="visually-hidden">Больше</span>
+              </button>
+            </label>
+            <label for="baby" class="content__label">
+              <input type="checkbox" id="baby" class="content__checkbox">
+              <p class="content__text">Можно с детьми</p>
+            </label>
+            <label for="calendar" class="content__label">
+              <input type="date" name="calendar" class="content__input">
+            </label>
+            <button class="content__button button">Следующий шаг</button>
+          </div>
+        </section>
+
+        <section><!--Тут будет 2 слайд--></section><!--Подскажи, пожалуйста, как в фигме скрыть раскрывающийся список
+        , чтобы я посмотрел как выглядят слайды.-->
+        <section><!--Тут будет 3 слайд--></section>
+
+      </section>
+
+
+
+
+
+
+
     </main>
-
-
-
-
-
-
-
     <footer class="footer">
       <a href="index.html" class="footer__logo">
-        <img src="img/mobile-text-logo.svg" alt="Погнали - путешествие с попутчиками" width="95" height="15" class="footer__logo--image">
+        <img src="img/mobile-text-logo.svg" alt="Погнали - путешествие с попутчиками" width="95" height="15">
       </a>
-      <div class="footer__socials">
-        <a href="https://www.facebook.com/htmlacademy/" class="footer__socials--facebook">
-          <span class="visually-hidden">Ссылка на фейсбук</span>
-        </a>
-        <a href="https://vk.com/htmlacademy" class="footer__socials--vk">
-          <span class="visually-hidden">Ссылка на вконтакте</span>
-        </a>
-        <a href="https://www.instagram.com/htmlacademy/" class="footer__socials--instagram">
-          <span class="visually-hidden">Ссылка на инстаграм</span>
-        </a>
-      </div>
-      <hr>
+      <ul class="footer__list socials">
+        <li class="socials__item">
+          <a href="https://www.facebook.com/htmlacademy/" class="socials__link">
+            <span class="visually-hidden">Ссылка на фейсбук</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="https://vk.com/htmlacademy" class="socials__link">
+            <span class="visually-hidden">Ссылка на вконтакте</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="https://www.instagram.com/htmlacademy/" class="socials__link">
+            <span class="visually-hidden">Ссылка на инстаграм</span>
+          </a>
+        </li>
+      </ul>
+
       <div class="footer__developed">
-        <p class="footer__developed--text">Разработано</p>
-        <img src="https://up.htmlacademy.ru/" alt="иконка html академии" class="footer__developed--img">
+        <p class="footer__text">Разработано</p>
+        <a href="https://up.htmlacademy.ru/" class="footer__link">
+          <img src="img/html-logo.svg" alt="иконка html академии">
+        </a>
       </div>
     </footer>
-
   </body>
 </html>
