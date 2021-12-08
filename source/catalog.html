@@ -10,8 +10,8 @@
         <img src="img/mobile-text-logo.svg" alt="Погнали - путешествие с попутчиками" width="96" height="15" class="header__logo--image">
       </a>
       <nav class="navigation">
-        <button class="navigation__toggle" type="button">
-          <span class="visually-hidden">Открыть/Закрыть меню</span>
+        <button class="navigation__toggle open close" type="button">
+          <span class="visually-hidden">Меню</span>
         </button>
         <div class="navigation__wrapper">
           <ul class="navigation__list">
@@ -68,129 +68,125 @@
     <button class="country-filter__button">
       <span class="visually-hidden">Открыто/закрыто</span>
     </button>
-    <form action="#" class="country-filter__form filter">
-      <ul class="filter__list">
-        <li class="filter__item">
-          <input class="filter__input" type="radio" id="euro" name="continents">
-          <label class="filter__label" for="euro">Европа</label>
+    <form action="#" class="country-filter__form">
+      <ul class="country-filter__list">
+        <li class="country-filter__item">
+          <button class="country-filter__button">Европа</button>
         </li>
-        <li class="filter__item">
-          <input class="filter__input" type="radio" id="asia" name="continents">
-          <label class="filter__label" for="asia">Азия</label>
+        <li class="country-filter__item">
+          <button class="country-filter__button">Азия</button>
         </li>
-        <li class="filter__item">
-          <input class="filter__input" type="radio" id="america" name="continents">
-          <label class="filter__label" for="america">Америка</label>
+        <li class="country-filter__item">
+          <button class="country-filter__button">Америка</button>
         </li>
-        <li class="filter__item">
-          <input class="filter__input" type="radio" id="island" name="continents">
-          <label class="filter__label" for="island">Острова</label>
+        <li class="country-filter__item">
+          <button class="country-filter__button">Острова</button>
         </li>
       </ul>
 
-      <table class="filter__table date">
-        <tr class="date__row">
-          <td class="date__cell">
-            <button class="date__button" type="button">А</button>
+      <table class="filter__table alphabet">
+        <tr class="alphabet__row">
+          <td class="alphabet__cell">
+            <button class="alphabet__button" type="button">А</button>
           </td>
-          <td class="date__cell">
-            <button class="date__button" type="button">Б</button>
+          <td class="alphabet__cell">
+            <button class="alphabet__button" type="button">Б</button>
           </td>
-          <td class="date__cell">
-            <button class="date__button" type="button">В</button>
+          <td class="alphabet__cell">
+            <button class="alphabet__button" type="button">В</button>
           </td>
-          <td class="date__cell">
-            <button class="date__button" type="button">Г</button>
+          <td class="alphabet__cell">
+            <button class="alphabet__button" type="button">Г</button>
           </td>
-          <td class="date__cell">
-            <button class="date__button" type="button">Д</button>
-          </td>
-        </tr>
-
-        <tr class="date__row">
-          <td class="date__cell">
-            <button class="date__button" type="button">Е</button>
-          </td>
-          <td class="date__cell">
-            <button class="date__button" type="button">З</button>
-          </td>
-          <td class="date__cell">
-            <button class="date__button" type="button">И</button>
-          </td>
-          <td class="date__cell">
-            <button class="date__button" type="button">К</button>
-          </td>
-          <td class="date__cell">
-            <button class="date__button" type="button">Л</button>
+          <td class="alphabet__cell">
+            <button class="alphabet__button" type="button">Д</button>
           </td>
         </tr>
 
-        <tr class="date__row">
-          <td class="date__cell">
-            <button class="date__button" type="button">М</button>
+        <tr class="alphabet__row">
+          <td class="alphabet__cell">
+            <button class="alphabet__button" type="button">Е</button>
           </td>
-          <td class="date__cell">
-            <button class="date__button" type="button">Н</button>
+          <td class="alphabet__cell">
+            <button class="alphabet__button" type="button">З</button>
           </td>
-          <td class="date__cell">
-            <button class="date__button" type="button">О</button>
+          <td class="alphabet__cell">
+            <button class="alphabet__button" type="button">И</button>
           </td>
-          <td class="date__cell">
-            <button class="date__button" type="button">П</button>
+          <td class="alphabet__cell">
+            <button class="alphabet__button" type="button">К</button>
           </td>
-          <td class="date__cell">
-            <button class="date__button" type="button">Р</button>
-          </td>
-        </tr>
-
-        <tr class="date__row">
-          <td class="date__cell">
-            <button class="date__button" type="button">С</button>
-          </td>
-          <td class="date__cell">
-            <button class="date__button" type="button">Т</button>
-          </td>
-          <td class="date__cell">
-            <button class="date__button" type="button">У</button>
-          </td>
-          <td class="date__cell">
-            <button class="date__button" type="button">Ф</button>
-          </td>
-          <td class="date__cell">
-            <button class="date__button" type="button">Х</button>
+          <td class="alphabet__cell">
+            <button class="alphabet__button" type="button">Л</button>
           </td>
         </tr>
 
-        <tr class="date__row">
-          <td class="date__cell">
-            <button class="date__button" type="button">Ч</button>
+        <tr class="alphabet__row">
+          <td class="alphabet__cell">
+            <button class="alphabet__button" type="button">М</button>
           </td>
-          <td class="date__cell">
-            <button class="date__button" type="button">Ш</button>
+          <td class="alphabet__cell">
+            <button class="alphabet__button" type="button">Н</button>
           </td>
-          <td class="date__cell">
-            <button class="date__button" type="button">Э</button>
+          <td class="alphabet__cell">
+            <button class="alphabet__button" type="button">О</button>
           </td>
-          <td class="date__cell">
-            <button class="date__button" type="button">Ю</button>
+          <td class="alphabet__cell">
+            <button class="alphabet__button" type="button">П</button>
           </td>
-          <td class="date__cell">
-            <button class="date__button" type="button">Я</button>
+          <td class="alphabet__cell">
+            <button class="alphabet__button" type="button">Р</button>
+          </td>
+        </tr>
+
+        <tr class="alphabet__row">
+          <td class="alphabet__cell">
+            <button class="alphabet__button" type="button">С</button>
+          </td>
+          <td class="alphabet__cell">
+            <button class="alphabet__button" type="button">Т</button>
+          </td>
+          <td class="alphabet__cell">
+            <button class="alphabet__button" type="button">У</button>
+          </td>
+          <td class="alphabet__cell">
+            <button class="alphabet__button" type="button">Ф</button>
+          </td>
+          <td class="alphabet__cell">
+            <button class="alphabet__button" type="button">Х</button>
+          </td>
+        </tr>
+
+        <tr class="alphabet__row">
+          <td class="alphabet__cell">
+            <button class="alphabet__button" type="button">Ч</button>
+          </td>
+          <td class="alphabet__cell">
+            <button class="alphabet__button" type="button">Ш</button>
+          </td>
+          <td class="alphabet__cell">
+            <button class="alphabet__button" type="button">Э</button>
+          </td>
+          <td class="alphabet__cell">
+            <button class="alphabet__button" type="button">Ю</button>
+          </td>
+          <td class="alphabet__cell">
+            <button class="alphabet__button" type="button">Я</button>
           </td>
         </tr>
       </table>
-      <ul class="filter__list" >
-        <li class="filter__item">Австралия</li>
-        <li class="filter__item">Австрия</li>
-        <li class="filter__item">Азербайджан</li>
-        <li class="filter__item">Албания</li>
-        <li class="filter__item">Алжир</li>
-        <li class="filter__item">Ангола</li>
-        <li class="filter__item">Андорра</li>
-        <li class="filter__item">Антигуа и Барбуда</li>
-        <li class="filter__item">Аргентина</li>
-        <li class="filter__item">Армения</li>
-        <li class="filter__item">Афганистан</li>
+      <ul class="country__list" >
+        <li class="country__item">Австралия</li>
+        <li class="country__item">Австрия</li>
+        <li class="country__item">Азербайджан</li>
+        <li class="country__item">Албания</li>
+        <li class="country__item">Алжир</li>
+        <li class="country__item">Ангола</li>
+        <li class="country__item">Андорра</li>
+        <li class="country__item">Антигуа и Барбуда</li>
+        <li class="country__item">Аргентина</li>
+        <li class="country__item">Армения</li>
+        <li class="country__item">Афганистан</li>
       </ul>
     </form>
     <button type="button" class="country-filter__button button">Свернуть</button>
@@ -202,48 +198,48 @@
       <h2 class="filters__title">Подберите идеального попутчика</h2>
       <div class="filters__category category">
         <h3 class="category__title">Хобби</h3>
-        <ul class="category__list hobby">
-          <li class="hobby__item">
-            <input class="hobby__input" type="checkbox" id="music">
-            <label class="hobby__label" for="music">Музыка</label>
+        <ul class="category__list">
+          <li class="category__item checkbox">
+            <input class="checkbox__input" type="checkbox" id="music">
+            <label class="checkbox__label" for="music">Музыка</label>
           </li>
-          <li class="hobby__item">
-            <input class="hobby__input" type="checkbox" id="work">
-            <label class="hobby__label" for="work">Работа</label>
+          <li class="category__item checkbox">
+            <input class="checkbox__input" type="checkbox" id="work">
+            <label class="checkbox__label" for="work">Работа</label>
           </li>
-          <li class="hobby__item">
-            <input class="hobby__input" type="checkbox" id="sport">
-            <label class="hobby__label" for="sport">Спорт</label>
+          <li class="category__item checkbox">
+            <input class="checkbox__input" type="checkbox" id="sport">
+            <label class="checkbox__label" for="sport">Спорт</label>
           </li>
         </ul>
       </div>
       <div class="filters__category category">
         <h3 class="category__title">Музыка</h3>
-        <ul class="category__list music">
-          <li class="music__item">
-            <input class="music__input" type="checkbox" id="hard-rock">
-            <label class="music__label" for="hard-rock">Тяжелый рок</label>
+        <ul class="category__list">
+          <li class="category__item checkbox">
+            <input class="checkbox__input" type="checkbox" id="hard-rock">
+            <label class="checkbox__label" for="hard-rock">Тяжелый рок</label>
           </li>
-          <li class="music__item">
-            <input class="music__input" type="checkbox" id="ru-rep">
-            <label class="music__label" for="ru-rep">Русский рэп</label>
+          <li class="category__item checkbox">
+            <input class="checkbox__input" type="checkbox" id="ru-rep">
+            <label class="checkbox__label" for="ru-rep">Русский рэп</label>
           </li>
-          <li class="music__item">
-            <input class="music__input" type="checkbox" id="eu-dance">
-            <label class="music__label" for="eu-dance">Евроденс</label>
+          <li class="category__item checkbox">
+            <input class="checkbox__input" type="checkbox" id="eu-dance">
+            <label class="checkbox__label" for="eu-dance">Евроденс</label>
           </li>
         </ul>
       </div>
       <div class="filters__category category">
         <h3 class="category__title">Еда</h3>
-        <ul class="category__list food">
-          <li class="food__item">
-            <input class="food__input" type="checkbox" id="meat">
-            <label class="food__label" for="meat">Мясо</label>
+        <ul class="category__list">
+          <li class="category__item checkbox">
+            <input class="checkbox__input" type="checkbox" id="meat">
+            <label class="checkbox__label" for="meat">Мясо</label>
           </li>
-          <li class="food__item">
-            <input class="food__input" type="checkbox" id="grass">
-            <label class="food__label" for="grass">Трава</label>
+          <li class="category__item checkbox">
+            <input class="checkbox__input" type="checkbox" id="grass">
+            <label class="checkbox__label" for="grass">Трава</label>
           </li>
         </ul>
       </div>
@@ -271,18 +267,18 @@
       <div class="filters__category category">
         <h3 class="category__title">Левел</h3>
         <div class="category__level">
-          <label for="min">
-            <input type="number" min="0" max="99" value="30" class="category__input" id="min">
+          <label>
+            <input type="number" min="0" max="99" value="30" class="category__input">
           </label>
-          <label for="max">
-            <input type="number" min="1" max="100" value="100" class="category__input" id="max">
+          <label>
+            <input type="number" min="1" max="100" value="100" class="category__input">
           </label>
         </div>
-        <div class="category__radius radius">
-          <div class="radius__min">
+        <div class="category__radius range-filter">
+          <div class="range-filter__min">
             <span class="visually-hidden">Минимальный уровень</span>
           </div>
-          <div class="radius__max">
+          <div class="range-filter__max">
             <span class="visually-hidden">Максимальный уровень</span>
           </div>
         </div>
@@ -296,7 +292,7 @@
   <section class="company">
     <ul class="company__list">
       <li class="company__ltem user">
-        <div class="user__hat">
+        <div class="user__header">
           <img src="img/firsova.png" alt="Фрисова" width="70" height="70">
           <button type="submit" class="user__like">
             <span class="visually-hidden">Лайк</span>
@@ -368,10 +364,10 @@
           <a href="#" class="pagination__link">4</a>
         </li>
       </ul>
-      <button class="company__back">
+      <button class="pagination__back">
         <span class="visually-hidden">Перелистнуть назад</span>
       </button>
-      <button class="company__next">
+      <button class="pagination__next">
         <span class="visually-hidden">Перелистнуть вперед</span>
       </button>
     </div>

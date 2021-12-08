@@ -10,8 +10,8 @@
         <img src="img/mobile-text-logo.svg" alt="Погнали - путешествие с попутчиками" width="96" height="15" class="header__logo--image">
       </a>
       <nav class="navigation">
-        <button class="navigation__toggle" type="button">
-          <span class="visually-hidden">Открыть/Закрыть меню</span>
+        <button class="navigation__toggle open close" type="button">
+          <span class="visually-hidden">Меню</span>
         </button>
         <div class="navigation__wrapper">
           <ul class="navigation__list">
@@ -73,40 +73,38 @@
             <img src="img/demin.png" alt="Фотография Демина" width="100" height="100">
           </div>
           <button type="submit" class="profile__button">Сменить фото</button>
-          <div class="form__conteiner">
+          <div class="form__container">
             <label for="tags" class="form__label">Тэги</label>
             <textarea name="tags" id="tags" cols="30" rows="10" class="form__textarea">#бургер #бар #футбол #концерт #крафт</textarea>
           </div>
-          <div class="form__conteiner">
+          <div class="form__container">
             <span class="form__span">Транспорт</span>
-            <div class="form__transport">
-              <ul class="form__list">
-                <li class="form__item">
-                  <label for="airplane">
-                    <input class="form__input" type="checkbox" id="airplane" name="airplane">
-                    <span class="visually-hidden">Самолет</span>
-                  </label>
-                </li>
-                <li class="form__item">
-                  <label for="bus">
-                    <input class="form__input" type="checkbox" id="bus" name="bus">
-                    <span class="visually-hidden">Автобус</span>
-                  </label>
-                </li>
-                <li class="form__item">
-                  <label for="bike">
-                    <input class="form__input" type="checkbox" id="bike" name="bike">
-                    <span class="visually-hidden">Велосипед</span>
-                  </label>
-                </li>
-                <li class="form__item">
-                  <label for="foot">
-                    <input class="form__input" type="checkbox" id="foot" name="foot">
-                    <span class="visually-hidden">Пешком</span>
-                  </label>
-                </li>
-              </ul>
-            </div>
+            <ul class="form__list">
+              <li class="form__item">
+                <label for="airplane">
+                  <input class="form__input" type="checkbox" id="airplane" name="airplane">
+                  <span class="visually-hidden">Самолет</span>
+                </label>
+              </li>
+              <li class="form__item">
+                <label for="bus">
+                  <input class="form__input" type="checkbox" id="bus" name="bus">
+                  <span class="visually-hidden">Автобус</span>
+                </label>
+              </li>
+              <li class="form__item">
+                <label for="bike">
+                  <input class="form__input" type="checkbox" id="bike" name="bike">
+                  <span class="visually-hidden">Велосипед</span>
+                </label>
+              </li>
+              <li class="form__item">
+                <label for="foot">
+                  <input class="form__input" type="checkbox" id="foot" name="foot">
+                  <span class="visually-hidden">Пешком</span>
+                </label>
+              </li>
+            </ul>
           </div>
         </form>
       </section>
@@ -133,291 +131,307 @@
         <h2 class="add-plan__title">Добавить план:</h2>
         <form class="add-plan__steps steps">
           <section class="steps__item">
-            <h3 class="steps__title" id="step1">Шаг 1. Даты пребывания</h3>
+            <h3 class="steps__title" id="step-1">Шаг 1. Даты пребывания</h3>
             <p class="steps__text">
               Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку, и ее предполагаемую длительность.
             </p>
             <div class="steps__input steps-input">
-              <label for="companion" class="content__label">
-                <span class="steps__text">ищу попутчиков:</span>
-                <span class="steps__text light">чел.</span>
+              <label for="companion" class="steps-input__label">
+                <span class="steps-input__text">ищу попутчиков:</span>
+                <span class="steps-input__text steps-input__text--light">чел.</span>
               </label>
-              <button type="button" class="steps__button">
+              <button type="button" class="steps-input__button">
                 <span class="visually-hidden">Меньше</span>
               </button>
-              <input type="number" id="companion" value="2" class="steps__input">
-              <button type="button" class="steps__button">
+              <input type="number" id="companion" value="2" class="steps-input__control">
+              <button type="button" class="steps-input__button">
                 <span class="visually-hidden">Больше</span>
               </button>
             </div>
-            <label for="duration" class="content__label">
-              <span class="steps__text">длительность:</span>
-              <span class="steps__text light">дн.</span>
-            </label>
-            <button class="steps__button">
-              <span class="visually-hidden">Меньше</span>
-            </button>
-            <input type="number" id="duration" value="3" class="steps__input">
-            <button class="steps__button">
-              <span class="visually-hidden">Больше</span>
-            </button>
+
+            <div class="steps__input steps-input">
+              <label for="duration" class="steps-input__label">
+                <span class="steps-input__text">длительность:</span>
+                <span class="steps-input__text steps-input__text--light">дн.</span>
+              </label>
+              <button class="steps-input__button">
+                <span class="visually-hidden">Меньше</span>
+              </button>
+              <input type="number" id="duration" value="3" class="steps-input__control">
+              <button class="steps-input__button">
+                <span class="visually-hidden">Больше</span>
+              </button>
+            </div>
+
             <p class="steps__checkbox">
               <input type="checkbox" id="baby" class="steps__checkbox">
               <label for="baby" class="steps__label">Можно с детьми</label>
             </p>
 
-            <div class="steps__date">
-              <button class="steps__button button-date">
-                <span class="visually-hidden">Стрелка влево</span>
-              </button>
-              <p class="steps__text text-date">Март 2019</p>
-              <button class="steps__button button-date">
-                <span class="visually-hidden">Стрелка вправо</span>
-              </button>
+            <div class="calendar">
+              <div class="calendar__header">
+                <button class="calendar__button calendar__button--prev">
+                  <span class="visually-hidden">Стрелка влево</span>
+                </button>
+                <p class="calendar__title">Март 2019</p>
+                <button class="calendar__button calendar__button--next">
+                  <span class="visually-hidden">Стрелка вправо</span>
+                </button>
+              </div>
+              <table class="calendar__table calendar-table">
+                <tr class="calendar-table__row">
+                  <th class="calendar__h">П</th>
+                  <th class="calendar__h">В</th>
+                  <th class="calendar__h">С</th>
+                  <th class="calendar__h">Ч</th>
+                  <th class="calendar__h">П</th>
+                  <th class="calendar__h">С</th>
+                  <th class="calendar__h">В</th>
+                </tr>
+                <tr class="calendar-table__row">
+                  <td class="calendar-table__cell">23</td>
+                  <td class="calendar-table__cell">24</td>
+                  <td class="calendar-table__cell">25</td>
+                  <td class="calendar-table__cell">26</td>
+                  <td class="calendar-table__cell">27</td>
+                  <td class="calendar-table__cell">28</td>
+                  <td class="calendar-table__cell">1</td>
+                </tr>
+                <tr>
+                  <td class="calendar-table__cell">2</td>
+                  <td class="calendar-table__cell">3</td>
+                  <td class="calendar-table__cell">4</td>
+                  <td class="calendar-table__cell">5</td>
+                  <td class="calendar-table__cell">6</td>
+                  <td class="calendar-table__cell">7</td>
+                  <td class="calendar-table__cell">8</td>
+                </tr>
+                <tr class="calendar-table__row">
+                  <td class="calendar-table__cell">9</td>
+                  <td class="calendar-table__cell">10</td>
+                  <td class="calendar-table__cell">11</td>
+                  <td class="calendar-table__cell">12</td>
+                  <td class="calendar-table__cell">13</td>
+                  <td class="calendar-table__cell">14</td>
+                  <td class="calendar-table__cell">15</td>
+                </tr>
+                <tr class="calendar-table__row">
+                  <td class="calendar-table__cell">16</td>
+                  <td class="calendar-table__cell">17</td>
+                  <td class="calendar-table__cell">18</td>
+                  <td class="calendar-table__cell">19</td>
+                  <td class="calendar-table__cell">20</td>
+                  <td class="calendar-table__cell">21</td>
+                  <td class="calendar-table__cell">22</td>
+                </tr>
+                <tr class="calendar-table__row">
+                  <td class="calendar-table__cell">23</td>
+                  <td class="calendar-table__cell">24</td>
+                  <td class="calendar-table__cell">25</td>
+                  <td class="calendar-table__cell">26</td>
+                  <td class="calendar-table__cell">27</td>
+                  <td class="calendar-table__cell">28</td>
+                  <td class="calendar-table__cell">29</td>
+                </tr>
+                <tr class="calendar-table__row">
+                  <td class="calendar-table__cell">30</td>
+                  <td class="calendar-table__cell">31</td>
+                  <td class="calendar-table__cell">1</td>
+                  <td class="calendar-table__cell">2</td>
+                  <td class="calendar-table__cell">3</td>
+                  <td class="calendar-table__cell">4</td>
+                  <td class="calendar-table__cell">5</td>
+                </tr>
+              </table>
             </div>
-            <table class="steps__date date">
-              <tr class="date__row">
-                <th class="date__h">П</th>
-                <th class="date__h">В</th>
-                <th class="date__h">С</th>
-                <th class="date__h">Ч</th>
-                <th class="date__h">П</th>
-                <th class="date__h">С</th>
-                <th class="date__h">В</th>
-              </tr>
-              <tr class="date__row">
-                <td class="date__cell">23</td>
-                <td class="date__cell">24</td>
-                <td class="date__cell">25</td>
-                <td class="date__cell">26</td>
-                <td class="date__cell">27</td>
-                <td class="date__cell">28</td>
-                <td class="date__cell">1</td>
-              </tr>
-              <tr>
-                <td class="date__cell">2</td>
-                <td class="date__cell">3</td>
-                <td class="date__cell">4</td>
-                <td class="date__cell">5</td>
-                <td class="date__cell">6</td>
-                <td class="date__cell">7</td>
-                <td class="date__cell">8</td>
-              </tr>
-              <tr class="date__row">
-                <td class="date__cell">9</td>
-                <td class="date__cell">10</td>
-                <td class="date__cell">11</td>
-                <td class="date__cell">12</td>
-                <td class="date__cell">13</td>
-                <td class="date__cell">14</td>
-                <td class="date__cell">15</td>
-              </tr>
-              <tr class="date__row">
-                <td class="date__cell">16</td>
-                <td class="date__cell">17</td>
-                <td class="date__cell">18</td>
-                <td class="date__cell">19</td>
-                <td class="date__cell">20</td>
-                <td class="date__cell">21</td>
-                <td class="date__cell">22</td>
-              </tr>
-              <tr class="date__row">
-                <td class="date__cell">23</td>
-                <td class="date__cell">24</td>
-                <td class="date__cell">25</td>
-                <td class="date__cell">26</td>
-                <td class="date__cell">27</td>
-                <td class="date__cell">28</td>
-                <td class="date__cell">29</td>
-              </tr>
-              <tr class="date__row">
-                <td class="date__cell">30</td>
-                <td class="date__cell">31</td>
-                <td class="date__cell">1</td>
-                <td class="date__cell">2</td>
-                <td class="date__cell">3</td>
-                <td class="date__cell">4</td>
-                <td class="date__cell">5</td>
-              </tr>
-            </table>
 
-            <a href="step2" class="content__button button">Следующий шаг</a>
+            <a href="#step-2" class="content__button button">Следующий шаг</a>
           </section>
           <section class="steps__item">
-            <h3 class="steps__title" id="step2">Шаг 2. Маршрут</h3>
+            <h3 class="steps__title" id="step-2">Шаг 2. Маршрут</h3>
             <p class="steps__text">
               Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.
             </p>
-            <ul class="steps__list country">
-              <li class="country__item">
-                <select class="country__select">
-                  <option class="country__option">Босния и герцеговина</option>
-                  <option class="country__option">Чехия</option>
-                </select>
+            <ul class="steps__list routes">
+              <li class="routes__item">
+                <button class="routes__title">Босния и герцеговина</button>
+                <div class="routes__flag">
+                  <img src="img/bosnia.svg" alt="Босния и герцеговина">
+                </div>
                 <button class="country__button">
                   <span class="visually-hidden">Удалить</span>
                 </button>
               </li>
-              <li class="country__item">
-                <select class="country__select">
-                  <option class="country__option">Чехия</option>
-                  <option class="country__option">Босния и герцеговина</option>
-                </select>
+              <li class="routes__item">
+                <button class="routes__title">Чехия</button>
+                <div class="routes__flag">
+                  <img src="img/сzech.svg" alt="Чехия">
+                </div>
                 <button class="country__button">
                   <span class="visually-hidden">Удалить</span>
                 </button>
               </li>
-              <li class="country__item">
-                <select class="country__select">
-                  <option class="country__option">выберите страну</option>
-                </select>               <!--Не понимаю, как это реализовать воедино-->
-                <table class="steps__table date">
-                  <tr class="date__row">
-                    <td class="date__cell">
-                      <button class="date__button" type="button">А</button>
-                    </td>
-                    <td class="date__cell">
-                      <button class="date__button" type="button">Б</button>
-                    </td>
-                    <td class="date__cell">
-                      <button class="date__button" type="button">В</button>
-                    </td>
-                    <td class="date__cell">
-                      <button class="date__button" type="button">Г</button>
-                    </td>
-                    <td class="date__cell">
-                      <button class="date__button" type="button">Д</button>
-                    </td>
-                  </tr>
-
-                  <tr class="date__row">
-                    <td class="date__cell">
-                      <button class="date__button" type="button">Е</button>
-                    </td>
-                    <td class="date__cell">
-                      <button class="date__button" type="button">З</button>
-                    </td>
-                    <td class="date__cell">
-                      <button class="date__button" type="button">И</button>
-                    </td>
-                    <td class="date__cell">
-                      <button class="date__button" type="button">К</button>
-                    </td>
-                    <td class="date__cell">
-                      <button class="date__button" type="button">Л</button>
-                    </td>
-                  </tr>
-
-                  <tr class="date__row">
-                    <td class="date__cell">
-                      <button class="date__button" type="button">М</button>
-                    </td>
-                    <td class="date__cell">
-                      <button class="date__button" type="button">Н</button>
-                    </td>
-                    <td class="date__cell">
-                      <button class="date__button" type="button">О</button>
-                    </td>
-                    <td class="date__cell">
-                      <button class="date__button" type="button">П</button>
-                    </td>
-                    <td class="date__cell">
-                      <button class="date__button" type="button">Р</button>
-                    </td>
-                  </tr>
-
-                  <tr class="date__row">
-                    <td class="date__cell">
-                      <button class="date__button" type="button">С</button>
-                    </td>
-                    <td class="date__cell">
-                      <button class="date__button" type="button">Т</button>
-                    </td>
-                    <td class="date__cell">
-                      <button class="date__button" type="button">У</button>
-                    </td>
-                    <td class="date__cell">
-                      <button class="date__button" type="button">Ф</button>
-                    </td>
-                    <td class="date__cell">
-                      <button class="date__button" type="button">Х</button>
-                    </td>
-                  </tr>
-
-                  <tr class="date__row">
-                    <td class="date__cell">
-                      <button class="date__button" type="button">Ч</button>
-                    </td>
-                    <td class="date__cell">
-                      <button class="date__button" type="button">Ш</button>
-                    </td>
-                    <td class="date__cell">
-                      <button class="date__button" type="button">Э</button>
-                    </td>
-                    <td class="date__cell">
-                      <button class="date__button" type="button">Ю</button>
-                    </td>
-                    <td class="date__cell">
-                      <button class="date__button" type="button">Я</button>
-                    </td>
-                  </tr>
-                </table>
-                <ul class="filter__list" >
-                  <li class="filter__item">Австралия</li>
-                  <li class="filter__item">Австрия</li>
-                  <li class="filter__item">Азербайджан</li>
-                  <li class="filter__item">Албания</li>
-                  <li class="filter__item">Алжир</li>
-                  <li class="filter__item">Ангола</li>
-                  <li class="filter__item">Андорра</li>
-                  <li class="filter__item">Антигуа и Барбуда</li>
-                  <li class="filter__item">Аргентина</li>
-                  <li class="filter__item">Армения</li>
-                  <li class="filter__item">Афганистан</li>
-                </ul>
+              <li class="routes__item">
+                <button class="routes__title">Выберите страну</button>
+                <div class="routes__flag">
+                  <img src="img/arrow-back.svg" alt="Выбрать страну">
+                </div>
                 <button class="country__button">
                   <span class="visually-hidden">Удалить</span>
                 </button>
+
+                <section class="routes-dropdown">
+                  <header>
+                    <h4>Выберите страну</h4>
+                    <button class="country__button">
+                      <span class="visually-hidden">Удалить</span>
+                    </button>
+                  </header>
+
+                  <div class="routes-dropdown__body">
+                    <table class="routes-dropdown__calendar">
+                    <tr class="routes-dropdown__row">
+                      <td class="routes-dropdown__cell">
+                        <button class="routes-dropdown__button" type="button">А</button>
+                      </td>
+                      <td class="routes-dropdown__cell">
+                        <button class="routes-dropdown__button" type="button">Б</button>
+                      </td>
+                      <td class="routes-dropdown__cell">
+                        <button class="routes-dropdown__button" type="button">В</button>
+                      </td>
+                      <td class="routes-dropdown__cell">
+                        <button class="routes-dropdown__button" type="button">Г</button>
+                      </td>
+                      <td class="routes-dropdown__cell">
+                        <button class="routes-dropdown__button" type="button">Д</button>
+                      </td>
+                    </tr>
+
+                    <tr class="routes-dropdown__row">
+                      <td class="routes-dropdown__cell">
+                        <button class="routes-dropdown__button" type="button">Е</button>
+                      </td>
+                      <td class="routes-dropdown__cell">
+                        <button class="routes-dropdown__button" type="button">З</button>
+                      </td>
+                      <td class="routes-dropdown__cell">
+                        <button class="routes-dropdown__button" type="button">И</button>
+                      </td>
+                      <td class="routes-dropdown__cell">
+                        <button class="routes-dropdown__button" type="button">К</button>
+                      </td>
+                      <td class="routes-dropdown__cell">
+                        <button class="routes-dropdown__button" type="button">Л</button>
+                      </td>
+                    </tr>
+
+                    <tr class="routes-dropdown__row">
+                      <td class="routes-dropdown__cell">
+                        <button class="routes-dropdown__button" type="button">М</button>
+                      </td>
+                      <td class="routes-dropdown__cell">
+                        <button class="routes-dropdown__button" type="button">Н</button>
+                      </td>
+                      <td class="routes-dropdown__cell">
+                        <button class="routes-dropdown__button" type="button">О</button>
+                      </td>
+                      <td class="routes-dropdown__cell">
+                        <button class="routes-dropdown__button" type="button">П</button>
+                      </td>
+                      <td class="routes-dropdown__cell">
+                        <button class="routes-dropdown__button" type="button">Р</button>
+                      </td>
+                    </tr>
+
+                    <tr class="routes-dropdown__row">
+                      <td class="routes-dropdown__cell">
+                        <button class="routes-dropdown__button" type="button">С</button>
+                      </td>
+                      <td class="routes-dropdown__cell">
+                        <button class="routes-dropdown__button" type="button">Т</button>
+                      </td>
+                      <td class="routes-dropdown__cell">
+                        <button class="routes-dropdown__button" type="button">У</button>
+                      </td>
+                      <td class="routes-dropdown__cell">
+                        <button class="routes-dropdown__button" type="button">Ф</button>
+                      </td>
+                      <td class="routes-dropdown__cell">
+                        <button class="routes-dropdown__button" type="button">Х</button>
+                      </td>
+                    </tr>
+
+                    <tr class="routes-dropdown__row">
+                      <td class="routes-dropdown__cell">
+                        <button class="routes-dropdown__button" type="button">Ч</button>
+                      </td>
+                      <td class="routes-dropdown__cell">
+                        <button class="routes-dropdown__button" type="button">Ш</button>
+                      </td>
+                      <td class="routes-dropdown__cell">
+                        <button class="routes-dropdown__button" type="button">Э</button>
+                      </td>
+                      <td class="routes-dropdown__cell">
+                        <button class="routes-dropdown__button" type="button">Ю</button>
+                      </td>
+                      <td class="routes-dropdown__cell">
+                        <button class="routes-dropdown__button" type="button">Я</button>
+                      </td>
+                    </tr>
+                    </table>
+                    <ul class="country__list" >
+                    <li class="country__item">Австралия</li>
+                    <li class="country__item">Австрия</li>
+                    <li class="country__item">Азербайджан</li>
+                    <li class="country__item">Албания</li>
+                    <li class="country__item">Алжир</li>
+                    <li class="country__item">Ангола</li>
+                    <li class="country__item">Андорра</li>
+                    <li class="country__item">Антигуа и Барбуда</li>
+                    <li class="country__item">Аргентина</li>
+                    <li class="country__item">Армения</li>
+                    <li class="country__item">Афганистан</li>
+                    </ul>
+                  </div>
+
+                </section>
+
               </li>
               <li class="steps__item">
                 <button class="steps__button">Добавить страну</button>
               </li>
             </ul>
-            <a href="step3" class="content__button button">Следующий шаг</a>
-            <a href="step1" class="content__button button-mini">на шаг назад</a>
+            <a href="#step-3" class="content__button button">Следующий шаг</a>
+            <a href="#step-1" class="content__button button-mini">на шаг назад</a>
           </section>>
 
           <section class="steps__item">
-            <h3 class="steps__title" id="step3">Шаг 3. Развлечения</h3>
+            <h3 class="steps__title" id="step-3">Шаг 3. Развлечения</h3>
             <p class="steps__text">
               Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
             </p>
-            <ul>
-              <li>
-                <h4>Босния и Герцеговина</h4>
-                <textarea name="bosnia" id="bosnia" cols="30" rows="10" placeholder="План действий"></textarea>
+            <ul class="steps__list route">
+              <li class="route__item">
+                <label class="route__label">
+                  <span class="route__title">Босния и Герцеговина</span>
+                  <textarea name="bosnia" id="bosnia" cols="30" rows="10" placeholder="План действий" class="route__text"></textarea>
+                </label>
               </li>
-              <li>
-                <h4>Чехия</h4>
-                <textarea name="czeh" id="czeh" cols="30" rows="10" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
-                </textarea>
+              <li class="route__item">
+                <label class="route__label">
+                  <span class="route__title">Чехия</span>
+                  <textarea name="czeh" id="czeh" cols="30" rows="10" placeholder="План действий" class="route__text"
+                  >Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
+                  </textarea>
+                </label>
               </li>
             </ul>
             <a href="#" class="content__button button">Отправить</a>
-            <a href="step2" class="content__button button-mini">на шаг назад</a>
+            <a href="#step-2" class="content__button button-mini">на шаг назад</a>
           </section>
-
-
         </form>
-
-
       </section>
-
-
-
-
-
-
 
     </main>
     <footer class="footer">
