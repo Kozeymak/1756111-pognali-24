@@ -5,324 +5,254 @@
     <title>HTML Academy: Погнали</title>
   </head>
   <body class="body">
-    <head class="head">
-      <a href="index.html" class="head__logo">
-        <img src="img/mobile-text-logo.svg" alt="Погнали - путешествие с попутчиками" width="96" height="15" class="head__logo--image">
+    <header class="header">
+      <a href="index.html" class="header__logo">
+        <img src="img/mobile-text-logo.svg" alt="Погнали - путешествие с попутчиками" width="96" height="15" class="header__logo--image">
       </a>
       <nav class="navigation">
-        <button class="navigation__toggle" type="button">
-          <span class="visually-hidden">Состояние меню</span>
+        <button class="navigation__toggle open close" type="button">
+          <span class="visually-hidden">Меню</span>
         </button>
         <div class="navigation__wrapper">
-          <ul class="navigation__wrapper__list">
-            <li class="navigation__wrapper__list__item">
-              <a href="index.html" class="navigation__wrapper__list__item--link">О сервисе</a>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="index.html" class="navigation__link">О сервисе</a>
             </li>
-            <li class="navigation__wrapper__list__item">
-              <a href="form.html" class="navigation__wrapper__list__item--link">Направления</a>
+            <li class="navigation__item">
+              <a href="form.html" class="navigation__link">Направления</a>
             </li>
-            <li class="navigation__wrapper__list__item">
-              <a href="catalog.html" class="navigation__wrapper__list__item--link">Попутчики</a>
+            <li class="navigation__item">
+              <a href="catalog.html" class="navigation__link">Попутчики</a>
             </li>
           </ul>
         </div>
-        <div class="navigation__login">
-          <a href="#" class="navigation__login-link">Авторизация</a>
-        </div>
-        <div class="navigation__contacts">
-          <a href="tel:+78005558628" class="navigation__contacts--phone">8 800 555-86-28</a>
-          <a href="mail@htmlacademy.ru" class="navigation__contacts--mail">mail@htmlacademy.ru</a>
-        </div>
-        <div class="navigation__socials">
-          <a href="https://www.facebook.com/htmlacademy/" class="navigation__socials--facebook">
-            <span class="visually-hidden">Ссылка на фейсбук</span>
-          </a>
-          <a href="https://vk.com/htmlacademy" class="navigation__socials--vk">
-            <span class="visually-hidden">Ссылка на вконтакте</span>
-          </a>
-          <a href="https://www.instagram.com/htmlacademy/" class="navigation__socials--instagram">
-            <span class="visually-hidden">Ссылка на инстаграм</span>
-          </a>
-        </div>
+        <ul class="navigation__user-actions user-actions">
+          <li class="user-actions__item">
+            <a href="#" class="user-actions__link">Авторизация</a>
+          </li>
+        </ul>
+        <ul class="navigation__contacts contacts">
+          <li class="contacts__item">
+            <a href="tel:+78005558628" class="contacts__link">8 800 555-86-28</a>
+          </li>
+          <li class="contacts__item">
+            <a href="mailto:mail@htmlacademy.ru" class="contacts__link">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+        <ul class="navigation__list socials">
+          <li class="socials__item">
+            <a href="https://www.facebook.com/htmlacademy/" class="socials__link">
+              <span class="visually-hidden">Ссылка на фейсбук</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="https://vk.com/htmlacademy" class="socials__link">
+              <span class="visually-hidden">Ссылка на вконтакте</span>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="https://www.instagram.com/htmlacademy/" class="socials__link">
+              <span class="visually-hidden">Ссылка на инстаграм</span>
+            </a>
+          </li>
+        </ul>
       </nav>
-    </head>
+    </header>
 
     <main class="main">
 
       <section class="greetings">
-        <div class="greetings__title">
-          <h1 class="greetings__title--caption">В путешествие с крутыми попутчиками!</h1>
-        </div>
-        <div class="greetings__contacts">
-          <a href="tel:+78005558628" class="greetings__contacts--phone">
-            <span class="visually-hidden">Позвонить</span>
-          </a>
-          <a href="mail@htmlacademy.ru" class="greetings__contacts--mail">
-            <span class="visually-hidden">Написать письмо</span>
-          </a>
-          <a href="#" class="greetings__contacts--authorization">Авторизация</a>
-        </div>
+        <h1 class="visually-hidden">Сервис по поиску попутчиков</h1>
+        <h2 class="greetings__title">В путешествие с крутыми попутчиками!</h2>
+        <ul class="greetings__contacts contacts">
+          <li class="contacts__item">
+            <a href="tel:+78005558628" class="contacts__link">
+              <span class="visually-hidden">Позвонить</span>
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a href="mailto:mail@htmlacademy.ru" class="contacts__link">
+              <span class="visually-hidden">Написать письмо</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="navigation__user-actions user-actions">
+          <li class="user-actions__item">
+            <a href="#" class="user-actions__link">Авторизация</a>
+          </li>
+        </ul>
       </section>
 
       <section class="quote">
         <blockquote class="quote__blockquote">
-          <p class="quote__blockquote--text">«Лучшее приложение, что я видел в жизни!»</p>
+          <p class="quote__text">«Лучшее приложение, что я видел в жизни!»</p>
         </blockquote>
-        <div class="quote__conteiner">
-          <cite class="quote__conteiner--autor">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+        <div class="quote__container">
+          <cite class="quote__autor">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
         </div>
       </section>
 
       <section class="plan">
         <ol class="plan__list">
-          <li class="plan__list--item">Выберите направление</li>
-          <li class="plan__list--item">Изучите идеи путешественников</li>
-          <li class="plan__list--item">Находите тех, кто похож на вас</li>
-          <li class="plan__list--item">Путешествуйте вместе!</li>
+          <li class="plan__item">Выберите направление</li>
+          <li class="plan__item">Изучите идеи путешественников</li>
+          <li class="plan__item">Находите тех, кто похож на вас</li>
+          <li class="plan__item">Путешествуйте вместе!</li>
         </ol>
       </section>
 
       <section class="about-service">
-        <div class="about-service__title">
-          <h2 class="about-service__title--caption">О сервисе</h2>
-        </div>
-        <div class="about-service__conteiner-1">
-          <p class="about-service__conteiner-1--text">
-            Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
-            Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
-          </p>
-        </div>
-        <div class="about-service__conteiner-2">
-          <p class="about-service__conteiner-2--text">
-            А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
-          </p>
-        </div>
+        <h2 class="about-service__title">О сервисе</h2>
+        <p class="about-service__text text--fin">
+          Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
+          Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
+        </p>
+        <p class="about-service__text text--bold">
+          А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
+        </p>
       </section>
 
       <section class="directions">
-        <div class="directions__title">
-          <h2 class="directions__title--caption">Направления</h2>
-        </div>
-        <div class="directions__subtitle">
-          <p class="directions__subtitle--text">
-            Мы не продаем туры и ничего не рекламируем.
-            Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
-          </p>
-        </div>
-        <div class="directions__country">
-          <ul class="directions__country__list">
+        <h2 class="directions__title">Направления</h2>
+        <p class="directions__text">
+          Мы не продаем туры и ничего не рекламируем.
+          Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
+        </p>
 
-            <li class="directions__country__list__item">
-              <div class="directions__country__list__item--background-thailand"></div>
-              <div class="directions__country__list__item__card">
-                <div class="directions__country__list__item__card--flag">
-                  <svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect width="35" height="24" fill="url(#pattern0)"/>
-                    <defs>
-                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use xlink:href="#image0_55_176" transform="translate(-0.0106383) scale(0.0145897 0.0212766)"/>
-                    </pattern>
-                    <image id="image0_55_176" width="70" height="47" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAvCAYAAABe1bwWAAABQ0lEQVRoge3bq05DQRSF4f+cIMCT0kcBgyyoguEiQHJ5JJpaBBeFKiDB8CokVCMQQzaZkgJdeiac9ZmKVuz5szMVPW2meyfM2QbOgHVgDWj43xLwCrwAI+B+dto2vy4DV8AE2AX6HYhCPmM/n3mSG6zEG0v5A2PgoOyMVYgGH8BxbMwAOOp6kTnRYtDmO8V+Oo8wm47yx0aEWa1sqBr02vpnLKJ1GMFhhCallKqcrDBvjOAwgsMIzdbhte+YBbwxgsMIDiM4jOAwgsMIDiM4jOAwgsMIDiM4jOAwgsMIDiM4jOAwgsMIDiP4dyXBGyM4jOAwQjy16TtmAW+M4DBChHmrcrKyphHmucsFhKcIc1HlaGWNIswjcNnlCr9Ei4fZ5XsK3FQzWjm3ucX3t9J7fo5+CNzlf2R0RZw1zrwD7H+1AD4B8Mcst+Nn7CgAAAAASUVORK5CYII="/>
-                    </defs>
-                  </svg>
+          <ul class="directions__list country">
+
+            <li class="country__item">
+              <img src="img/thailand.svg" alt="Флаг Таиланда" width="35" height="24">
+              <div class="country__card">
+                <div class="country__description">
+                  <h3 class="country__title">Таиланд</h3>
+                  <p class="country__subtitle">Джунгли зовут!</p>
                 </div>
-                <div class="directions__country__list__item__card__description">
-                  <h3 class="directions__country__list__item__card__description--title">Таиланд</h3>
-                  <p class="directions__country__list__item__card__description--subtitle">Джунгли зовут!</p>
-                </div>
-              </div>
-              <div class="directions__country__list__item__persons">
-                <p class="directions__country__list__item__persons--sum">18321</p>
+                <p class="country__persons">18321</p>
               </div>
             </li>
 
-                        <li class="directions__country__list__item">
-              <div class="directions__country__list__item--background-france"></div>
-              <div class="directions__country__list__item__card">
-                <div class="directions__country__list__item__card--flag">
-                  <svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect width="35" height="24" fill="url(#pattern0)"/>
-                    <defs>
-                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use xlink:href="#image0_17067_850" transform="translate(-0.0106383) scale(0.0145897 0.0212766)"/>
-                    </pattern>
-                    <image id="image0_17067_850" width="70" height="47" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAvCAYAAABe1bwWAAABRUlEQVRoge3bPS8EURiG4XsmCtvL8lNss+VSrdWgQInEH7JRaBQ+EonKR0njr0ioSRTklbPCbh6KEXNknruZYjKT91yZnGlmioW1Yz61CGwD88AsUFChs4PlKpd/2/Pm7m/c5hW4B+6AIXA5OlGm4zRwBFwAA2CuKso/qUhrHaS1h0ErRp9K8+8Dqw2A+KkweAE24onpAet5z/unhUWvTHuK+9pOwHSNMlEnYGYyGyqH2mX+M9ZSaRiRYUSGERlGZBiRYUSGERlGZBiRYUSGERlGZBiRYUSGERlGZBiRYUSGERlGZBiRYUSGERlGZBiRYUSGERlGZBiRYUSGERlGZBhRwDxkOVm9PQbMbZMFRDcBs5flaPU2DJhr4LDJCmOFxdVo890CTrIZrb5Ok8XHW+kpfUffB87THxlNKdYaa14CVt4tgDcAjyLWdVlVQwAAAABJRU5ErkJggg=="/>
-                    </defs>
-                    </svg>
+            <li class="country__item">
+              <img src="img/france.svg" alt="Флаг Франции" width="35" height="24">
+              <div class="country__card">
+                <div class="country__description">
+                  <h3 class="country__title">Франция</h3>
+                  <p class="country__subtitle">Трэ бьен, манифик!!</p>
                 </div>
-                <div class="directions__country__list__item__card__description">
-                  <h3 class="directions__country__list__item__card__description--title">Франция</h3>
-                  <p class="directions__country__list__item__card__description--subtitle">Трэ бьен, манифик!</p>
-                </div>
-              </div>
-              <div class="directions__country__list__item__persons">
-                <p class="directions__country__list__item__persons--sum">12518</p>
+                <p class="country__persons">12518</p>
               </div>
             </li>
 
-            <li class="directions__country__list__item">
-              <div class="directions__country__list__item--background-сzech"></div>
-              <div class="directions__country__list__item__card">
-                <div class="directions__country__list__item__card--flag">
-                  <svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect width="35" height="24" fill="url(#pattern0)"/>
-                    <defs>
-                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use xlink:href="#image0_17067_865" transform="translate(-0.0106383) scale(0.0145897 0.0212766)"/>
-                    </pattern>
-                    <image id="image0_17067_865" width="70" height="47" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAvCAYAAABe1bwWAAADg0lEQVRogeWbb0hdZRjAf/fMXIEsCpcJRQsM2pDNsYpG0J8v0ofYPkgFFfSlOfoQMcamgiIVZKlFRIHGQBhCsDGGrKD8VF7/ZJpeFR25TadO5/yTXp1/rru+bzzXKwzhqlfP8dy95/fl3nMuvOd5fjyc877Pe67vp+oA7+ccIMqbwEngZSAN8GE2GrgD/AVUAr+tZrtrKfkN5hfCD2dlplX7fJQAzwMpHpBCNMeUaM4fAPuBX4HwrozMt+m98V/VdDD03pFDafh8XvARk0zgGeCyiMkGym7cnGZsYp4Xs9K9Lucg0CRiSqMlxM2hIMOjs7x0OB3L8rScFAt49f4zDX8PU/ZjM/fCyr2w3OeoiEldG0ZLYJQvv2sitLTsQScRnrBi/dLRPcYX3zTIE2tnQ0oMrJhihJ7eST4vr+fu3D0POVlhXTFCb98UxWX1zMyGdiikxGBDMUL/wDSFX/mZml70gJIVNiVGuDUyS2FJHeOT8w6HlBhsWoxwe2yOwhJ/5NN04hIjSMVI5UgFmUzcYgS51xR97ad/MGismi2JEYIzIYpL/Vzrm7I3ogRhy2IEmd98Vl4fme+YxrbECDIzlhmyzJRNYttiBFlTydqqtWPUGDW2iBFkNV76QzONLcN2DekqtokRwmHFtxUt/Nk4+OCZWIOtYgSlNN+fa6P2j367h95RbBcjaK2pPB/gSu31xM18AxwRQ0QOVP3cxaVf/nXqEo6S5OTg0jVWF2tYvDDgfqZx4pgYC81H6iqv6xGnLuEojoh5CMUnqosX9HjiZBontot5hDCnVQcH9IO9hrJVzB6WyFMBntUzdg7rCraJSWWRguU20jGjw2eLmKf0HPmqjccxp2G+bTEZOshZFSAFs7ZYtiXmoJ7klOpkN+btWG5ZzFF9h49VN0mYuce9JTHZeogPVS++yAtJZhK3mBzdR47qM1bIKpsWI9UhVSLV4gU2JUbuIydVD69oc1qXG7GhGHnifKo6ydLm7QSsx7piZG5yRgV4Tpu7sRaLmGIeI0S+audpfdf1IN1AxEysfd3sSeYpWG5nLwueEbGGSWlt+u8/t0/PUrzc6mUpQp2IqVg9kh5KkfqHR1lyNyz3qRQxtUD1ET1OnmqPNJo8TjXwe+Tm+5oeyT2hriZb6Hc8LuUikCtfrLf0ALmqZ8FCvwscA2qi/8jwCpKr5HwckMJYAPgfWyk7qoZ9+QUAAAAASUVORK5CYII="/>
-                    </defs>
-                    </svg>
+            <li class="country__item">
+              <img src="img/сzech.svg" alt="Флаг Чехии" width="35" height="24">
+              <div class="country__card">
+                <div class="country__description">
+                  <h3 class="country__title">Чехия</h3>
+                  <p class="country__subtitle">Закоулки старой Европы</p>
                 </div>
-                <div class="directions__country__list__item__card__description">
-                  <h3 class="directions__country__list__item__card__description--title">Чехия</h3>
-                  <p class="directions__country__list__item__card__description--subtitle">Закоулки старой Европы</p>
-                </div>
-              </div>
-              <div class="directions__country__list__item__persons">
-                <p class="directions__country__list__item__persons--sum">5326</p>
+                <p class="country__persons">5326</p>
               </div>
             </li>
 
           </ul>
-        </div>
-        <div class="directions__button-box">
-          <button class="directions__button-box--button">Показать все</button>
-        </div>
+
+          <button class="directions__button button">Показать все</button>
       </section>
 
       <section class="companion">
-        <div class="companion__title">
-          <h2 class="companion__title--caption">Попутчики</h2>
-        </div>
-        <div class="companion__subtitle">
-          <p class="companion__subtitle--text-1">
-            Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
-            Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
-          </p>
-          <p class="companion__subtitle--text-2">
-            Теперь можно легко найти единомышленников!
-          </p>
-        </div>
+        <h2 class="companion__title">Попутчики</h2>
+        <p class="companion__subtitle text--fin">
+          Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
+          Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+        </p>
+        <p class="companion__subtitle text--bold">
+          Теперь можно легко найти единомышленников!
+        </p>
 
-        <div class="companion__fellow-traveler">
-          <ul class="companion__fellow-traveler__list">
+          <ul class="companion__list attendant">
 
-            <li class="companion__fellow-traveler__list__item">
-              <div class="companion__fellow-traveler__list__item__avatar">
-                <img class="companion__fellow-traveler__list__item__avatar--img"
-                src="img/firsova.png" alt="Таня Фирсова" width="270" height="270">
-                <div class="companion__fellow-traveler__list__item__avatar__level">
-                  <p class="companion__fellow-traveler__list__item__avatar__level--big-text">99</p>
-                  <hr class="companion__fellow-traveler__list__item__avatar__level--hr">
-                  <p class="companion__fellow-traveler__list__item__avatar__level--text">level</p>
+            <li class="attendant__item">
+              <div class="attendant__avatar">
+                <img src="img/firsova.png" alt="Таня Фирсова" width="270" height="270">
+                <div class="attendant__level level">
+                  <p class="level__value">99</p>
+                  <p class="level__small">level</p>
                 </div>
               </div>
-              <div class="companion__fellow-traveler__list__item__description">
-                <div class="companion__fellow-traveler__list__item__description__flags">
-                  <svg width="35" height="25" viewBox="0 0 35 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect width="35" height="25" fill="url(#pattern0)"/>
-                    <defs>
-                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use xlink:href="#image0_58_70" transform="translate(-0.0208333) scale(0.0297619 0.0416667)"/>
-                    </pattern>
-                    <image id="image0_58_70" width="35" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAYCAYAAABwZEQ3AAAB8UlEQVRIie2XPW8TQRCGn93bO8fW2VhJ5ABCCJCSGok0EX+DH0CdJhSUlHShIA209PwNWlIiBBISUiRiCSTHsR18HztovEYhxaWwJeTiXumKXc3MPjPTvGfk+AnAc2Af2OT/6yfwBnjlgAPEHOI8xB78HEY8uGb4pAx3kYWLKYwy6Ap0BIol4PX1oWkzjA5xkutk+kTS+zKK+Th2tCOZxZ3bhEeTPjvjU7BJSM5y2NqAe+sUnyD7GmObsjCLvzAk2zluO4eJ6Stbl7jkw3mLF99THjTDFL41bvDy5DM7J8fQSEP2YASPH8LeFtP3luG7FHerXBim+BHReTrC7f6GiesqTIaYpBMJ99dK7iShuMQ5naaDdhOSVsgWgSSGTLAtj7tZEm0uDoMwq0Nh9JTbcLUSErsiIDPVMFWqYapUw1SphqlSDVOlGqZKCmNWhMWon0kUJxPDWWnoloHtzFuywkOWqdUI4dMcSg+RQXKDH1ts6q9/4hppvtaZ7ydRmAGeXtt67jY8t5NQXFxBe81Bml6aq78pmce2DK5XYNcXh3FSzM3V7DhQD3wAvNaSpVzuTDBEeKy6uyvD1E7MzLirZ19mx1rZ6FSCxXumkznSfq1h31rZuBKqkSb6xwwqhHaifxK6ZFnKJ2pfFOYXBW8xHP0BFHqo+F7daYMAAAAASUVORK5CYII="/>
-                    </defs>
-                  </svg>
-                  <svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect width="35" height="24" fill="url(#pattern0)"/>
-                    <defs>
-                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use xlink:href="#image0_55_176" transform="translate(-0.0106383) scale(0.0145897 0.0212766)"/>
-                    </pattern>
-                    <image id="image0_55_176" width="70" height="47" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAvCAYAAABe1bwWAAABQ0lEQVRoge3bq05DQRSF4f+cIMCT0kcBgyyoguEiQHJ5JJpaBBeFKiDB8CokVCMQQzaZkgJdeiac9ZmKVuz5szMVPW2meyfM2QbOgHVgDWj43xLwCrwAI+B+dto2vy4DV8AE2AX6HYhCPmM/n3mSG6zEG0v5A2PgoOyMVYgGH8BxbMwAOOp6kTnRYtDmO8V+Oo8wm47yx0aEWa1sqBr02vpnLKJ1GMFhhCallKqcrDBvjOAwgsMIzdbhte+YBbwxgsMIDiM4jOAwgsMIDiM4jOAwgsMIDiM4jOAwgsMIDiM4jOAwgsMIDiP4dyXBGyM4jOAwQjy16TtmAW+M4DBChHmrcrKyphHmucsFhKcIc1HlaGWNIswjcNnlCr9Ei4fZ5XsK3FQzWjm3ucX3t9J7fo5+CNzlf2R0RZw1zrwD7H+1AD4B8Mcst+Nn7CgAAAAASUVORK5CYII="/>
-                    </defs>
-                  </svg>
-                  <svg width="35" height="25" viewBox="0 0 35 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect width="35" height="25" fill="url(#pattern0)"/>
-                    <defs>
-                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use xlink:href="#image0_58_72" transform="translate(-0.0208333) scale(0.0297619 0.0416667)"/>
-                    </pattern>
-                    <image id="image0_58_72" width="35" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAYCAYAAABwZEQ3AAAFbElEQVRIibWW228c5RnGf983szOzM7O7PiSkNOLcxCXhUFPOSTDOAcdpIwi9IEIiIOCKG7igF63EP0C56E1bUFWEBBInIVArUBBcgHrBRUUrWkzj2I6dg2OvE3t3dtbrnd2db9DMsDS213USte/VSPN+8/zm+Z73mxFDh98GeB54BthAh1KR4GzJ5aVHPmf/7q+g7ELUqRGwI8hGLL6eY+kLC+koEJ2e+n2dB34PvKQDzwK/WatTCDjn2dx1wwxDd45CNdsZJPoOxFYsvpGj9lkWrSdcDySu3Hf6TQn8+r91hqGgGUqe2DmCKNSgoXcGsSJwFLU3c9Q+sdEKIch1QS6sX8XtXWvdFSJizrfZsXWaXbeNQ8UGscKWNoirqL3jsnjURvYoyNDZwbWrK4ZprHW7FWooJXhy59dg1yHIrAYxI8gplt5zWfzQQXYrRCa6VBDa29RxWeJKxWbgx6e5q38CKs5yV+JLI4K8ov6+Q/XPDrKgEMZlgSRPXHNX45zE4Y2zgtVcnpVYLH77gqL+Fwf/AzcFMS8bhGip3jliiSuew+CNJ/nprZPgXZCVNki3ov6Rjf+ei8xdJogQRH4VNXsO2dtNh9GAZksjo6nUFaMJfjaFicX0FCT42MZ/N4d0FcK6BBCRvpAqV4iCAP2aq7AeG8QcHlwN087K0C2T3Hrz1H9caYP0KIJPbSpvuUj7EkDiPVcKteDFk4G+9XrMBwawhgYROSdpWQXTaOmYepi6oreglU1vaKQgn2Xx33SRVoTIXgRIDBGGqIVycp3Z3oe5fxBzzy6EaSxr1Veui1052D/O9u0n0wlqg/SGNP5q4b+RSyZG2OuASAGNZgqRyZC54ydYw7sxB+5JhTrUMpigqZE1Wjy+YwQ0BS0NZJSCfGFReT2H0NcBkZKoHqAWSkg7i3n/vZgH9mDc2b+OhRfAtF05dPtx+radTrMSg2wIaf7NpPJaDiFBOGuASEFUq6PKHjKXw/rZXqyD+8hs61sXYhVMvanhWs00K0ncJWwMaX5pUnk1nwJ3AonHs7qIqvjI3h6yDx/A+vk+9B9dd9EQy2DiCSp6NofvPsYNfWfSUd4Y0vrKpPKnPFEokHmV/iK0bYyi9Izwq2g//AH2wX1Yw3vRrtl8SQAzfpHJ0km+mRtNYZYaOl12I3UlzlZPRGvEwPtjnqgpktM1AWmPZ3xG1Gro111N9vBDWPsHkZs2XrT4+PwJ/n3ueAIxWTpFue7RCJvoiSsVhyP3fsPVW6fBsFKQVwpEdYHsUhDFECGq5BEFDfRtWzAfuB9r3wCykFtTOIoiZqpFjp0bY2x+gvH5KU6WT1EJfIJWQEbL4BouBTOPEAK9FmTodeocib/MPYowDuvLBaJFgeyJoBGi5ksQKjL92zGH92Du3rnqjIirpUJmq8XE8on5ScYWJjlVPoMf+NRbAZZu4hoOeTOPtFaPtz7n2eKpgX+x+Z7TqC+78V4uoBY1pLNEeLaMkBLjjn6ch4bRdty+bHFs7axfZGTuGBMLU4ydn+BM5Sx+o5qI2xkbJ5OlYOXpFuv+aQn9ivyS8fihf8K4ife7HlpzDUQ0i8ShsHc32qGDcNO1SXdAxHTpFCPFY0yWphg9P8FMZTYRD1oNXNMhq1t0WQXk+uIry9AffXCkvFE7f0XthU3oEx7dfb1w334Y2kGwdTNTeHw9/gkniuOMzo8z688ltjdVi5zhJtZ3Z7suR3xllcXxt59+dsvRpd+G01fiHbie2V03cnyTZKI6zejY3ymWZ/CCShLGnOliagaa1P4X4ivrOVEfeop/XGX88sNfbHpmrkvvLXqzlGbOIFphIm5oGXSpJ2n/P9U88AfgxW8B+kRbocFhKhIAAAAASUVORK5CYII="/>
-                    </defs>
-                  </svg>
-                </div>
-                <div class="companion__fellow-traveler__list__item__description__user">
-                  <h3 class="companion__fellow-traveler__list__item__description__user--text">Таня Фирсова</h3>
-                </div>
-                <div class="companion__fellow-traveler__list__item__description__hashtags">
-                  <p class="companion__fellow-traveler__list__item__description__hashtags--text">
-                    #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
-                  </p>
-                </div>
-                <div class="companion__fellow-traveler__list__item__description__transport">
-                  <div class="companion__fellow-traveler__list__item__description__transport--airplane-on">
+              <div class="attendant__description">
+                <ul class="attendant__list flags">
+                  <li class="flags__item">
+                    <img src="img/srilanka.svg" alt="Флаг Шри-Ланки" width="35" height="24">
+                  </li>
+                  <li class="flags__item">
+                    <img src="img/thailand.svg" alt="Флаг Таиланда" width="35" height="24">
+                  </li>
+                  <li class="flags__item">
+                    <img src="img/seychelles.svg" alt="Флаг Сицилии" width="35" height="24">
+                  </li>
+                </ul>
+                <h3 class="attendant__user">Таня Фирсова</h3>
+                <ul class="attendant__list hashtags">
+                  <li class="hashtags__item">#ЗОЖ</li>
+                  <li class="hashtags__item">#ПП</li>
+                  <li class="hashtags__item">#Фитнес</li>
+                  <li class="hashtags__item">#пляж</li>
+                  <li class="hashtags__item">#авокадо</li>
+                  <li class="hashtags__item">#смузи</li>
+                </ul>
+                <div class="attendant__transport">
+                  <div class="attendant__transport__airplane off">
                     <span class="visually-hidden">Самолет</span>
                   </div>
-                  <div class="companion__fellow-traveler__list__item__description__transport--bus-off">
+                  <div class="attendant__transport__bus on">
                     <span class="visually-hidden">Автобус</span>
                   </div>
-                  <div class="companion__fellow-traveler__list__item__description__transport--bike-off">
+                  <div class="attendant__transport__bike on">
                     <span class="visually-hidden">Велосипед</span>
                   </div>
-                  <div class="companion__fellow-traveler__list__item__description__transport--foot-off">
+                  <div class="attendant__transport__foot on">
                     <span class="visually-hidden">Пешком</span>
                   </div>
                 </div>
               </div>
             </li>
 
-            <li class="companion__fellow-traveler__list__item">
-              <div class="companion__fellow-traveler__list__item__avatar">
-                <img class="companion__fellow-traveler__list__item__avatar--img"
-                src="img/demin.png" alt="Петя Демин" width="270" height="270">
-                <div class="companion__fellow-traveler__list__item__avatar__level">
-                  <p class="companion__fellow-traveler__list__item__avatar__level--big-text">99</p>
-                  <hr class="companion__fellow-traveler__list__item__avatar__level--hr">
-                  <p class="companion__fellow-traveler__list__item__avatar__level--text">level</p>
+            <li class="attendant__item">
+              <div class="attendant__avatar">
+                <img src="img/demin.png" alt="Петя Демин" width="270" height="270">
+                <div class="attendant__level">
+                  <p class="attendant__level__value">99</p>
+                  <p class="attendant__level__small">level</p>
                 </div>
               </div>
-              <div class="companion__fellow-traveler__list__item__description">
-                <div class="companion__fellow-traveler__list__item__description__flags">
-                  <svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect width="35" height="24" fill="url(#pattern0)"/>
-                    <defs>
-                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use xlink:href="#image0_17067_968" transform="scale(0.0285714 0.0416667)"/>
-                    </pattern>
-                    <image id="image0_17067_968" width="35" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAYCAYAAABwZEQ3AAAAvElEQVRIie3XoQrCUBSA4f8OHSvCQN/IZjYvGC0Wy3yAlVlW9PlsCwpjZaCwyRlTLGdNdsL9y+XCgfvBTcetN1uAI7AHVijdypY0idglEU3ZamN9LoKuhiaf96fcR7oDF+A8Aw5APjr+3xbD+68AOE0I+S0VTGwEEwvmaQDC55s6AxCpCwwgvnmMlsdoeYyWx2h5jJbHaAnGGbE4wYQGIFIomMoARKoEkxmASJlsB8XwVbKqLCdAPIArULwBnSIekSkprtAAAAAASUVORK5CYII="/>
-                    </defs>
-                  </svg>
-                  <svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect width="35" height="24" fill="url(#pattern0)"/>
-                    <defs>
-                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use xlink:href="#image0_17067_865" transform="translate(-0.0106383) scale(0.0145897 0.0212766)"/>
-                    </pattern>
-                    <image id="image0_17067_865" width="70" height="47" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAvCAYAAABe1bwWAAADg0lEQVRogeWbb0hdZRjAf/fMXIEsCpcJRQsM2pDNsYpG0J8v0ofYPkgFFfSlOfoQMcamgiIVZKlFRIHGQBhCsDGGrKD8VF7/ZJpeFR25TadO5/yTXp1/rru+bzzXKwzhqlfP8dy95/fl3nMuvOd5fjyc877Pe67vp+oA7+ccIMqbwEngZSAN8GE2GrgD/AVUAr+tZrtrKfkN5hfCD2dlplX7fJQAzwMpHpBCNMeUaM4fAPuBX4HwrozMt+m98V/VdDD03pFDafh8XvARk0zgGeCyiMkGym7cnGZsYp4Xs9K9Lucg0CRiSqMlxM2hIMOjs7x0OB3L8rScFAt49f4zDX8PU/ZjM/fCyr2w3OeoiEldG0ZLYJQvv2sitLTsQScRnrBi/dLRPcYX3zTIE2tnQ0oMrJhihJ7eST4vr+fu3D0POVlhXTFCb98UxWX1zMyGdiikxGBDMUL/wDSFX/mZml70gJIVNiVGuDUyS2FJHeOT8w6HlBhsWoxwe2yOwhJ/5NN04hIjSMVI5UgFmUzcYgS51xR97ad/MGismi2JEYIzIYpL/Vzrm7I3ogRhy2IEmd98Vl4fme+YxrbECDIzlhmyzJRNYttiBFlTydqqtWPUGDW2iBFkNV76QzONLcN2DekqtokRwmHFtxUt/Nk4+OCZWIOtYgSlNN+fa6P2j367h95RbBcjaK2pPB/gSu31xM18AxwRQ0QOVP3cxaVf/nXqEo6S5OTg0jVWF2tYvDDgfqZx4pgYC81H6iqv6xGnLuEojoh5CMUnqosX9HjiZBontot5hDCnVQcH9IO9hrJVzB6WyFMBntUzdg7rCraJSWWRguU20jGjw2eLmKf0HPmqjccxp2G+bTEZOshZFSAFs7ZYtiXmoJ7klOpkN+btWG5ZzFF9h49VN0mYuce9JTHZeogPVS++yAtJZhK3mBzdR47qM1bIKpsWI9UhVSLV4gU2JUbuIydVD69oc1qXG7GhGHnifKo6ydLm7QSsx7piZG5yRgV4Tpu7sRaLmGIeI0S+audpfdf1IN1AxEysfd3sSeYpWG5nLwueEbGGSWlt+u8/t0/PUrzc6mUpQp2IqVg9kh5KkfqHR1lyNyz3qRQxtUD1ET1OnmqPNJo8TjXwe+Tm+5oeyT2hriZb6Hc8LuUikCtfrLf0ALmqZ8FCvwscA2qi/8jwCpKr5HwckMJYAPgfWyk7qoZ9+QUAAAAASUVORK5CYII="/>
-                    </defs>
-                  </svg>
-                </div>
-                <div class="companion__fellow-traveler__list__item__description__user">
-                  <h3 class="companion__fellow-traveler__list__item__description__user--text">Петя Демин</h3>
-                </div>
-                <div class="companion__fellow-traveler__list__item__description__hashtags">
-                  <p class="companion__fellow-traveler__list__item__description__hashtags--text">
-                    #бургер #бар #футбол #концерт #крафт
-                  </p>
-                </div>
-                <div class="companion__fellow-traveler__list__item__description__transport">
-                  <div class="companion__fellow-traveler__list__item__description__transport--airplane-on">
+              <div class="attendant__description">
+                <ul class="attendant__list flags">
+                  <li class="flags__item">
+                    <img src="img/belgium.svg" alt="Флаг Бельгии" width="35" height="24">
+                  </li>
+                  <li class="flags__item">
+                    <img src="img/сzech.svg" alt="Флаг Чехии" width="35" height="24">
+                  </li>
+                </ul>
+                <h3 class="attendant__user">Петя Демин</h3>
+                <ul class="attendant__list hashtags">
+                  <li class="hashtags__item">#бургер</li>
+                  <li class="hashtags__item">#бар</li>
+                  <li class="hashtags__item">#футбол</li>
+                  <li class="hashtags__item">#концерт</li>
+                  <li class="hashtags__item">#крафт</li>
+                </ul>
+                <div class="attendant__transport">
+                  <div class="attendant__transport__airplane off">
                     <span class="visually-hidden">Самолет</span>
                   </div>
-                  <div class="companion__fellow-traveler__list__item__description__transport--bus-on">
+                  <div class="attendant__transport__bus off">
                     <span class="visually-hidden">Автобус</span>
                   </div>
-                  <div class="companion__fellow-traveler__list__item__description__transport--bike-off">
+                  <div class="attendant__transport__bike on">
                     <span class="visually-hidden">Велосипед</span>
                   </div>
-                  <div class="companion__fellow-traveler__list__item__description__transport--foot-on">
+                  <div class="attendant__transport__foot off">
                     <span class="visually-hidden">Пешком</span>
                   </div>
                 </div>
@@ -330,98 +260,94 @@
             </li>
 
           </ul>
-        </div>
-
-        <div class="companion__button-box">
-          <button class="companion__button-box--button">Показать всех</button>
-        </div>
+          <button class="companion__button button">Показать всех</button>
       </section>
 
-      <section class="your-profile">
-        <div class="your-profile__title">
-          <h2 class="your-profile__title--caption">Добавьте свой профиль</h2>
-        </div>
-        <div class="your-profile__avatar">
-          <img src="img/avatardefolt.png" alt="пустая картинка пользователя" height="100" width="100" class="your-profile__avatar--img">
+      <section class="tariffs">
+        <h2 class="tariffs__title">Добавьте свой профиль</h2>
+        <div class="tariffs__avatar">
+          <img src="img/avatar-default.png" alt="Пустая картинка пользователя" height="100" width="100">
         </div>
 
-        <ol class="your-profile__list">
-          <li class="your-profile__list__item">
-            <p class="your-profile__list__item--text1">Базовое размещение</p>
-            <p class="your-profile__list__item--price1">Бесплатно</p>
+        <ol class="tariffs__list">
+          <li class="tariffs__item">
+            <p class="tariffs__text">Базовое размещение</p>
+            <p class="tariffs__price">Бесплатно</p>
           </li>
-          <li class="your-profile__list__item">
-            <p class="your-profile__list__item--text2">Вывод на первых позициях</p>
-            <p class="your-profile__list__item--price2">99 руб./мес</p>
+          <li class="tariffs__item">
+            <p class="tariffs__text">Вывод на первых позициях</p>
+            <p class="tariffs__price">99 руб./мес</p>
           </li>
-          <li class="your-profile__list__item">
-            <p class="your-profile__list__item--text3">Кастомный цвет карточки</p>
-            <p class="your-profile__list__item--price3">59 руб./мес</p>
+          <li class="tariffs__item">
+            <p class="tariffs__text">Кастомный цвет карточки</p>
+            <p class="tariffs__price">59 руб./мес</p>
           </li>
         </ol>
 
-        <div class="your-profile__buttom-box">
-          <button class="your-profile__buttom-box--button">Показать тарифы для бизнеса</button>
-        </div>
+          <a href="#" class="tariffs__link">Показать тарифы для бизнеса</a>
       </section>
 
       <section class="interested">
-        <div class="interested__titile">
-          <h2 class="interested__titile--caption">Заинтересовались?</h2>
-        </div>
-        <div class="interested__description">
-          <p class="interested__description--text">
-            Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a href="#" class="interested__description--text--link">авторизуйтесь</a>.
-          </p>
-        </div>
-        <form action="htmlacademy" class="interested__form">
-          <input type="email" value="E-mail" class="interested__form--input">
-          <button type="submit" class="interested__form--button">
+        <h2 class="interested__titile">Заинтересовались?</h2>
+        <p class="interested__description">
+          Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее
+          <a href="#" class="interested__link">авторизуйтесь</a>.
+        </p>
+        <form class="interested__form">
+          <input type="email" placeholder="E-mail" class="interested__input">
+          <button type="submit" class="interested__button">
             <span class="visually-hidden">Отправить</span>
           </button>
         </form>
-        <div class="interested__box">
-          <p class="interested__box--text">Остались вопросы? Мы с радостью на них ответим!</p>
-        </div>
-        <div class="interested__contacts">
-          <a href="tel:+78005558628" class="interested__contacts--phone">8 800 555-86-28</a>
-          <a href="mail@htmlacademy.ru" class="interested__contacts--mail">mail@htmlacademy.ru</a>
-        </div>
+        <p class="interested__text">Остались вопросы? Мы с радостью на них ответим!</p>
+        <ul class="interested__contacts contacts">
+          <li class="contacts__item">
+            <a href="tel:+78005558628" class="contacts__link">8 800 555-86-28</a>
+          </li>
+          <li class="contacts__item">
+            <a href="mailto:mail@htmlacademy.ru" class="contacts__link">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
       </section>
 
-      <section class="adress">
-        <div class="adress__contacts">
-          <p class="adress__contacts--text">ул. Большая Конюшенная, 19/8</p>
-        </div>
-        <div class="adress__button-box">
-          <button class="adress__button-box-buttom">Проложить маршрут</button>
-        </div>
-        <map name="map"><img src="img/map.png" alt="расположение">
+      <section class="address">
+          <address class="address__contacts">ул. Большая Конюшенная, 19/8</address>
+          <a href="#" class="address__link">Проложить маршрут</a>
+          <img src="img/map.png" alt="Расположение">
           <svg>
-            <circle r="30" cx="100" cy="100" fill="#fff"/></svg>
-        </map>
+            <circle r="30" cx="100" cy="100" fill="#fff"/>
+            <circle r="10" cx="100" cy="100" fill="#000"/>
+          </svg>
       </section>
     </main>
 
     <footer class="footer">
       <a href="index.html" class="footer__logo">
-        <img src="img/mobile-text-logo.svg" alt="Погнали - путешествие с попутчиками" width="95" height="15" class="footer__logo--image">
+        <img src="img/mobile-text-logo.svg" alt="Погнали - путешествие с попутчиками" width="95" height="15">
       </a>
-      <div class="footer__socials">
-        <a href="https://www.facebook.com/htmlacademy/" class="footer__socials--facebook">
-          <span class="visually-hidden">Ссылка на фейсбук</span>
-        </a>
-        <a href="https://vk.com/htmlacademy" class="footer__socials--vk">
-          <span class="visually-hidden">Ссылка на вконтакте</span>
-        </a>
-        <a href="https://www.instagram.com/htmlacademy/" class="footer__socials--instagram">
-          <span class="visually-hidden">Ссылка на инстаграм</span>
-        </a>
-      </div>
-      <hr>
+      <ul class="footer__list socials">
+        <li class="socials__item">
+          <a href="https://www.facebook.com/htmlacademy/" class="socials__link">
+            <span class="visually-hidden">Ссылка на фейсбук</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="https://vk.com/htmlacademy" class="socials__link">
+            <span class="visually-hidden">Ссылка на вконтакте</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="https://www.instagram.com/htmlacademy/" class="socials__link">
+            <span class="visually-hidden">Ссылка на инстаграм</span>
+          </a>
+        </li>
+      </ul>
+
       <div class="footer__developed">
-        <p class="footer__developed--text">Разработано</p>
-        <img src="https://up.htmlacademy.ru/" alt="иконка html академии" class="footer__developed--img">
+        <p class="footer__text">Разработано</p>
+        <a href="https://up.htmlacademy.ru/" class="footer__link">
+          <img src="img/html-logo.svg" alt="иконка html академии">
+        </a>
       </div>
     </footer>
   </body>
