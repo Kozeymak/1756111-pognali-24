@@ -1,0 +1,30 @@
+@import "colors.scss";
+@import "fonts.scss";
+
+.plan {
+  background-color: $basic-blue-light-2;
+
+  &__item{
+    color: $basic-blue;
+    font-family: $font;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  &__item:nth-of-type(1){
+    background-color: $special-orange;
+  }
+  &__item:nth-of-type(2){
+    background-color: $special-orange-light;
+  }
+  &__item:nth-of-type(3){
+    background-color: $basic-yellow-dark;
+  }
+  &__item:nth-of-type(4){
+    background-color: $basic-yellow;
+  }
+}

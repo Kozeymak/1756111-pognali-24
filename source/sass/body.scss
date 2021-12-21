@@ -1,0 +1,10 @@
+@import "colors.scss";
+@import "fonts.scss";
+
+.visually-hidden {
+  display: none;
+}
+.body{
+  display: flex;
+  flex-direction: column;
+}

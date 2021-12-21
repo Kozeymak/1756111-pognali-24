@@ -1,0 +1,29 @@
+@import "colors.scss";
+@import "fonts.scss";
+
+.quote {
+
+  background-color: $basic-blue-dark;
+
+  &__text{
+    color: $pure-white;
+    font-family: $font;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  &__autor{
+    color: $pure-white;
+    font-family: $font;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}

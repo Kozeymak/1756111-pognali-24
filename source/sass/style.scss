@@ -1,2 +1,23 @@
 // Начните писать стили здесь
-body { background: red; }
+@import "colors.scss";
+@import "fonts.scss";
+@import "header.scss";
+@import "body.scss";
+@import "greetings.scss";
+@import "contacts.scss";
+@import "user-actions.scss";
+@import "quote.scss";
+@import "plan.scss";
+@import "about-service.scss";
+@import "directions.scss";
+@import "country.scss";
+@import "button.scss";
+@import "companion.scss";
+@import "attendant.scss";
+@import "hashtags.scss";
+@import "level.scss";
+@import "tariffs.scss";
+@import "interested.scss";
+@import "address.scss";
+@import "footer.scss";
+@import "socials.scss";
