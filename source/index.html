@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="body">
     <header class="header">
@@ -14,7 +15,7 @@
           <span class="visually-hidden">Меню</span>
         </button>
         <div class="navigation__wrapper">
-          <ul class="navigation__list">
+          <ul class="navigation__list list-reset">
             <li class="navigation__item">
               <a href="index.html" class="navigation__link">О сервисе</a>
             </li>
@@ -26,12 +27,12 @@
             </li>
           </ul>
         </div>
-        <ul class="navigation__user-actions user-actions">
+        <ul class="navigation__user-actions user-actions list-reset">
           <li class="user-actions__item">
             <a href="#" class="user-actions__link">Авторизация</a>
           </li>
         </ul>
-        <ul class="navigation__contacts contacts">
+        <ul class="navigation__contacts contacts list-reset">
           <li class="contacts__item">
             <a href="tel:+78005558628" class="contacts__link">8 800 555-86-28</a>
           </li>
@@ -39,7 +40,7 @@
             <a href="mailto:mail@htmlacademy.ru" class="contacts__link">mail@htmlacademy.ru</a>
           </li>
         </ul>
-        <ul class="navigation__list socials">
+        <ul class="navigation__list socials list-reset">
           <li class="socials__item">
             <a href="https://www.facebook.com/htmlacademy/" class="socials__link">
               <span class="visually-hidden">Ссылка на фейсбук</span>
@@ -64,19 +65,19 @@
       <section class="greetings">
         <h1 class="visually-hidden">Сервис по поиску попутчиков</h1>
         <h2 class="greetings__title">В путешествие с крутыми попутчиками!</h2>
-        <ul class="greetings__contacts contacts">
-          <li class="contacts__item">
+        <ul class="greetings__contacts contacts list-reset">
+          <li class="contacts__item--tel">
             <a href="tel:+78005558628" class="contacts__link">
               <span class="visually-hidden">Позвонить</span>
             </a>
           </li>
-          <li class="contacts__item">
+          <li class="contacts__item--let">
             <a href="mailto:mail@htmlacademy.ru" class="contacts__link">
               <span class="visually-hidden">Написать письмо</span>
             </a>
           </li>
         </ul>
-        <ul class="navigation__user-actions user-actions">
+        <ul class="navigation__user-actions user-actions list-reset">
           <li class="user-actions__item">
             <a href="#" class="user-actions__link">Авторизация</a>
           </li>
@@ -119,7 +120,7 @@
           Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
         </p>
 
-          <ul class="directions__list country">
+          <ul class="directions__list country list-reset">
 
             <li class="country__item">
               <img src="img/thailand.svg" alt="Флаг Таиланда" width="35" height="24">
@@ -169,7 +170,7 @@
           Теперь можно легко найти единомышленников!
         </p>
 
-          <ul class="companion__list attendant">
+          <ul class="companion__list attendant list-reset">
 
             <li class="attendant__item">
               <div class="attendant__avatar">
@@ -180,7 +181,7 @@
                 </div>
               </div>
               <div class="attendant__description">
-                <ul class="attendant__list flags">
+                <ul class="attendant__list flags list-reset">
                   <li class="flags__item">
                     <img src="img/srilanka.svg" alt="Флаг Шри-Ланки" width="35" height="24">
                   </li>
@@ -192,7 +193,7 @@
                   </li>
                 </ul>
                 <h3 class="attendant__user">Таня Фирсова</h3>
-                <ul class="attendant__list hashtags">
+                <ul class="attendant__list hashtags list-reset">
                   <li class="hashtags__item">#ЗОЖ</li>
                   <li class="hashtags__item">#ПП</li>
                   <li class="hashtags__item">#Фитнес</li>
@@ -200,7 +201,7 @@
                   <li class="hashtags__item">#авокадо</li>
                   <li class="hashtags__item">#смузи</li>
                 </ul>
-                <div class="attendant__transport">
+                <div class="attendant__transport"> <!--Я думаю тут надо сделать иначе-->
                   <div class="attendant__transport__airplane off">
                     <span class="visually-hidden">Самолет</span>
                   </div>
@@ -226,7 +227,7 @@
                 </div>
               </div>
               <div class="attendant__description">
-                <ul class="attendant__list flags">
+                <ul class="attendant__list flags list-reset">
                   <li class="flags__item">
                     <img src="img/belgium.svg" alt="Флаг Бельгии" width="35" height="24">
                   </li>
@@ -235,7 +236,7 @@
                   </li>
                 </ul>
                 <h3 class="attendant__user">Петя Демин</h3>
-                <ul class="attendant__list hashtags">
+                <ul class="attendant__list hashtags list-reset">
                   <li class="hashtags__item">#бургер</li>
                   <li class="hashtags__item">#бар</li>
                   <li class="hashtags__item">#футбол</li>
@@ -288,8 +289,8 @@
       </section>
 
       <section class="interested">
-        <h2 class="interested__titile">Заинтересовались?</h2>
-        <p class="interested__description">
+        <h2 class="interested__title">Заинтересовались?</h2>
+        <p class="interested__text">
           Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее
           <a href="#" class="interested__link">авторизуйтесь</a>.
         </p>
@@ -300,7 +301,7 @@
           </button>
         </form>
         <p class="interested__text">Остались вопросы? Мы с радостью на них ответим!</p>
-        <ul class="interested__contacts contacts">
+        <ul class="interested__contacts contacts list-reset">
           <li class="contacts__item">
             <a href="tel:+78005558628" class="contacts__link">8 800 555-86-28</a>
           </li>
@@ -325,7 +326,7 @@
       <a href="index.html" class="footer__logo">
         <img src="img/mobile-text-logo.svg" alt="Погнали - путешествие с попутчиками" width="95" height="15">
       </a>
-      <ul class="footer__list socials">
+      <ul class="footer__list socials list-reset">
         <li class="socials__item">
           <a href="https://www.facebook.com/htmlacademy/" class="socials__link">
             <span class="visually-hidden">Ссылка на фейсбук</span>

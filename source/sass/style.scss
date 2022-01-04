@@ -1,1 +1,24 @@
-// Начните писать стили здесь
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/list-reset.scss";
+@import "global/visually-hidden.scss";
+@import "blocks/header.scss";
+@import "global/body.scss";
+@import "blocks/greetings.scss";
+@import "blocks/contacts.scss";
+@import "blocks/user-actions.scss";
+@import "blocks/quote.scss";
+@import "blocks/plan.scss";
+@import "blocks/about-service.scss";
+@import "blocks/directions.scss";
+@import "blocks/country.scss";
+@import "global/button.scss";
+@import "blocks/companion.scss";
+@import "blocks/attendant.scss";
+@import "blocks/hashtags.scss";
+@import "blocks/level.scss";
+@import "blocks/tariffs.scss";
+@import "blocks/interested.scss";
+@import "blocks/address.scss";
+@import "blocks/footer.scss";
+@import "blocks/socials.scss";

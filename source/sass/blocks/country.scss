@@ -1,0 +1,26 @@
+.country {
+  &__card {
+    background-color: $pure-white;
+  }
+
+  &__title {
+    color: $pure-black;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 21px;
+  }
+
+  &__subtitle {
+    color: $special-grey;
+    font-weight: 500;
+    line-height: 18px;
+    opacity: 30%;
+  }
+
+  &__persons {
+    color: $basic-blue-dark;
+    font-weight: 500;
+    line-height: 20px;
+    opacity: 30%;
+  }
+}

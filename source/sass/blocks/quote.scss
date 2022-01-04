@@ -1,0 +1,13 @@
+.quote {
+
+  background-color: $basic-blue-dark;
+
+  &__text {
+    color: $pure-white;
+  }
+
+  &__autor {
+    color: $pure-white;
+    font-weight: 700;
+  }
+}
