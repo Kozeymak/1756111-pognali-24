@@ -1,20 +1,13 @@
-@import "colors.scss";
-@import "fonts.scss";
-
 .attendant {
-
-  &__item{
+  &__item {
     background-color: $pure-white;
   }
 
-  &__user{
+  &__user {
     color: $basic-blue-black;
-    font-family: $font;
     font-size: 21px;
-    font-style: normal;
     font-weight: 700;
     line-height: 21px;
-    letter-spacing: 0em;
     text-align: center;
   }
 }
