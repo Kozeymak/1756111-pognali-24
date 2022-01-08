@@ -1,0 +1,16 @@
+.user {
+  background-color: $pure-white;
+
+  &__name {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+
+  &__range {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    color: $basic-blue-dark;
+  }
+}

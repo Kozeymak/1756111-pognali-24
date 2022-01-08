@@ -1,0 +1,14 @@
+.company {
+  &__more {
+    color: $basic-blue-light;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  &__back,
+  &__next {
+    background-color: $pure-white;
+  }
+}

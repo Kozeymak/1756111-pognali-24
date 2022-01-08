@@ -1,0 +1,21 @@
+.routes {
+  &__title,
+  &__flag {
+    font-family: $font;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.09em;
+    background-color: $pure-white;
+    border: 1px solid $special-grey-light;
+    border-radius: 4px;
+    color: $basic-blue-black;
+  }
+
+  &__button {
+    background-color: $special-blue-light-2;
+    border-radius: 100%;
+    border: none;
+  }
+}
