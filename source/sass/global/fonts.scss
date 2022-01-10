@@ -9,7 +9,7 @@
 @font-face {
   font-family: "Blogger Sans";
   src: url("../fonts/bloggersans-bolditalic.woff2"), url("../fonts/bloggersans-bolditalic.woff");
-  font-style: normal;
+  font-style: italic;
   font-display: swap;
   font-weight: 700;
 }
@@ -17,7 +17,7 @@
 @font-face {
   font-family: "Blogger Sans";
   src: url("../fonts/bloggersans-italic.woff2"), url("../fonts/bloggersans-italic.woff");
-  font-style: normal;
+  font-style: italic;
   font-display: swap;
   font-weight: 400;
 }
@@ -33,7 +33,7 @@
 @font-face {
   font-family: "Blogger Sans";
   src: url("../fonts/bloggersans-lightitalic.woff2"), url("../fonts/bloggersans-lightitalic.woff");
-  font-style: normal;
+  font-style: italic;
   font-display: swap;
   font-weight: 300;
 }
@@ -49,7 +49,7 @@
 @font-face {
   font-family: "Blogger Sans";
   src: url("../fonts/bloggersans-mediumitalic.woff2"), url("../fonts/bloggersans-mediumitalic.woff");
-  font-style: normal;
+  font-style: italic;
   font-display: swap;
   font-weight: 500;
 }
@@ -61,5 +61,3 @@
   font-display: swap;
   font-weight: 400;
 }
-
-// Не знаю где искать font-weight. В первом интенсиве все было в названии файла

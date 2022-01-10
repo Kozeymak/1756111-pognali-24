@@ -26,15 +26,15 @@
     letter-spacing: 0.06em;
     text-align: center;
     text-transform: uppercase;
+  }
 
-    &__link {
-      text-transform: uppercase;
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 14px;
-      letter-spacing: 0.03em;
-      text-align: center;
-    }
-    //TODO заметил, что на ссылки не работают стили, в индексе тоже самое
+  &__link {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $pure-black;
   }
 }

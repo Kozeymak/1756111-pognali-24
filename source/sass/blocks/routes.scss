@@ -1,6 +1,5 @@
 .routes {
-  &__title,
-  &__flag {
+  &__title {
     font-family: $font;
     font-size: 14px;
     font-style: normal;
@@ -13,9 +12,8 @@
     color: $basic-blue-black;
   }
 
-  &__button {
-    background-color: $special-blue-light-2;
-    border-radius: 100%;
-    border: none;
+  &__flag {
+    border: 1px solid $special-grey-light;
+    border-radius: 4px;
   }
 }

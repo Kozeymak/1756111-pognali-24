@@ -8,20 +8,19 @@
     line-height: 18px;
   }
 
-  &__item:nth-of-type(1) {
+  &__item:nth-child(4n+1) {
     background-color: $special-orange;
   }
 
-  &__item:nth-of-type(2) {
+  &__item:nth-child(4n+2) {
     background-color: $special-orange-light;
   }
 
-  &__item:nth-of-type(3) {
+  &__item:nth-child(4n+3) {
     background-color: $basic-yellow-dark;
   }
 
-  &__item:nth-of-type(4) {
+  &__item:nth-child(4n+4) {
     background-color: $basic-yellow;
   }
-  // какие есть еще варинаты решения? Через модификатор? Как то странно
 }

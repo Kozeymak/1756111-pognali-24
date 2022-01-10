@@ -1,5 +1,5 @@
 .calendar-table {
-  &__h {
+  &__title {
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
@@ -13,7 +13,6 @@
   &__cell {
     border: 1px solid $special-grey-light-3;
     color: $special-grey;
-    opacity: 0.6;
     text-align: center;
   }
 }

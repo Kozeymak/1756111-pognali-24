@@ -1,13 +1,5 @@
 .alphabet {
   &__button {
-    font-family: $font;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 14px;
-    letter-spacing: 0;
-    text-align: center;
-    background-color: $pure-white;
     border: 1px solid $special-grey-light;
   }
 }
