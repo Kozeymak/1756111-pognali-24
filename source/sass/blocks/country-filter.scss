@@ -1,0 +1,13 @@
+.country-filter {
+  background-color: $special-blue-light-3;
+
+  &__text {
+    font-weight: 700;
+    line-height: 18px;
+    color: $basic-blue-light-2;
+  }
+
+  &__close {
+    border: none;
+  }
+}

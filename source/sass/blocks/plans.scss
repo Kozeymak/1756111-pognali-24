@@ -1,0 +1,40 @@
+.plans {
+  background-color: $special-blue-light;
+  color: $basic-blue-black;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  &__item {
+    background-color: $pure-white;
+  }
+
+  &__title-small {
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $pure-black;
+  }
+}

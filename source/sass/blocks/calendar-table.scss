@@ -1,0 +1,18 @@
+.calendar-table {
+  &__title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+
+    &--red {
+      color: $special-red;
+    }
+  }
+
+  &__cell {
+    border: 1px solid $special-grey-light-3;
+    color: $special-grey;
+    text-align: center;
+  }
+}

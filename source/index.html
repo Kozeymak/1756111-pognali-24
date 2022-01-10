@@ -29,15 +29,13 @@
         </div>
         <ul class="navigation__user-actions user-actions list-reset">
           <li class="user-actions__item">
-            <a href="#" class="user-actions__link">Авторизация</a>
-          </li>
-        </ul>
-        <ul class="navigation__contacts contacts list-reset">
-          <li class="contacts__item">
             <a href="tel:+78005558628" class="contacts__link">8 800 555-86-28</a>
           </li>
-          <li class="contacts__item">
+          <li class="user-actions__item">
             <a href="mailto:mail@htmlacademy.ru" class="contacts__link">mail@htmlacademy.ru</a>
+          </li>
+          <li class="user-actions__item">
+            <a href="#" class="user-actions__link">Авторизация</a>
           </li>
         </ul>
         <ul class="navigation__list socials list-reset">
@@ -63,25 +61,27 @@
     <main class="main">
 
       <section class="greetings">
-        <h1 class="visually-hidden">Сервис по поиску попутчиков</h1>
-        <h2 class="greetings__title">В путешествие с крутыми попутчиками!</h2>
-        <ul class="greetings__contacts contacts list-reset">
-          <li class="contacts__item--tel">
-            <a href="tel:+78005558628" class="contacts__link">
-              <span class="visually-hidden">Позвонить</span>
-            </a>
-          </li>
-          <li class="contacts__item--let">
-            <a href="mailto:mail@htmlacademy.ru" class="contacts__link">
-              <span class="visually-hidden">Написать письмо</span>
-            </a>
-          </li>
-        </ul>
-        <ul class="navigation__user-actions user-actions list-reset">
-          <li class="user-actions__item">
-            <a href="#" class="user-actions__link">Авторизация</a>
-          </li>
-        </ul>
+        <div class="conteiner">
+          <h1 class="visually-hidden">Сервис по поиску попутчиков</h1>
+          <h2 class="greetings__title">В путешествие с крутыми попутчиками!</h2>
+          <ul class="greetings__contacts contacts list-reset">
+            <li class="contacts__item--tel">
+              <a href="tel:+78005558628" class="contacts__link">
+                <span class="visually-hidden">Позвонить</span>
+              </a>
+            </li>
+            <li class="contacts__item--let">
+              <a href="mailto:mail@htmlacademy.ru" class="contacts__link">
+                <span class="visually-hidden">Написать письмо</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="navigation__user-actions user-actions list-reset">
+            <li class="user-actions__item">
+              <a href="#" class="user-actions__link">Авторизация</a>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="quote">
@@ -94,7 +94,7 @@
       </section>
 
       <section class="plan">
-        <ol class="plan__list">
+        <ol class="plan__list list-reset">
           <li class="plan__item">Выберите направление</li>
           <li class="plan__item">Изучите идеи путешественников</li>
           <li class="plan__item">Находите тех, кто похож на вас</li>
@@ -157,7 +157,7 @@
 
           </ul>
 
-          <button class="directions__button button">Показать все</button>
+          <button class="directions__button button button--yellow-arrow">Показать все</button>
       </section>
 
       <section class="companion">
@@ -270,7 +270,7 @@
           <img src="img/avatar-default.png" alt="Пустая картинка пользователя" height="100" width="100">
         </div>
 
-        <ol class="tariffs__list">
+        <ol class="tariffs__list list-reset">
           <li class="tariffs__item">
             <p class="tariffs__text">Базовое размещение</p>
             <p class="tariffs__price">Бесплатно</p>

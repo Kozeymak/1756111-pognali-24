@@ -8,13 +8,27 @@
   font-style: normal;
   font-weight: 700;
   line-height: 18px;
-  text-align: left;
   border: none;
   border-radius: 0;
   padding: 0;
+  background-color: transparent;
 
   &--primary {
     background-color: $basic-yellow;
     border-radius: 12px;
+  }
+
+  &--yellow-arrow {
+    width: 270px;
+    height: 60px;
+    background-color: $basic-yellow;
+
+    &::after {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 7px 0 7px 14px;
+      border-color: transparent transparent transparent #000000;
+    } //TODO посмотри пожалуйста, почему не работает
   }
 }
