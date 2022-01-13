@@ -1,6 +1,16 @@
 .attendant {
   &__item {
-    background-color: $pure-white;
+    background-color: transparent;
+    position: relative;
+    width: 270px;
+  }
+
+  &__flags {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    top: 259px;
   }
 
   &__user {
@@ -8,6 +18,35 @@
     font-size: 21px;
     font-weight: 700;
     line-height: 21px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 31px;
+    padding-right: 20px;
+  }
+
+  &__list {
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+
+  &__description {
+    background-color: $pure-white;
+    margin-top: -27px;
+    border-radius: 0 0 15px 15px;
+  }
+
+  &__transport {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 75px;
+    padding-bottom: 20px;
+  }
+
+  &__item + &__item {
+    margin-top: 9px;
   }
 }
