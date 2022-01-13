@@ -3,18 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="body">
     <header class="header">
       <a href="index.html" class="header__logo">
         <img src="img/mobile-text-logo.svg" alt="Погнали - путешествие с попутчиками" width="96" height="15" class="header__logo--image">
       </a>
-      <nav class="navigation">
+      <nav class="navigation visually-hidden"> <!--ПОТОМ УДАЛИТЬ ВХ-->
         <button class="navigation__toggle open close" type="button">
           <span class="visually-hidden">Меню</span>
         </button>
         <div class="navigation__wrapper">
-          <ul class="navigation__list">
+          <ul class="navigation__list list-reset">
             <li class="navigation__item">
               <a href="index.html" class="navigation__link">О сервисе</a>
             </li>
@@ -26,20 +27,18 @@
             </li>
           </ul>
         </div>
-        <ul class="navigation__user-actions user-actions">
+        <ul class="navigation__user-actions user-actions list-reset">
+          <li class="user-actions__item">
+            <a href="tel:+78005558628" class="contacts__link">8 800 555-86-28</a>
+          </li>
+          <li class="user-actions__item">
+            <a href="mailto:mail@htmlacademy.ru" class="contacts__link">mail@htmlacademy.ru</a>
+          </li>
           <li class="user-actions__item">
             <a href="#" class="user-actions__link">Авторизация</a>
           </li>
         </ul>
-        <ul class="navigation__contacts contacts">
-          <li class="contacts__item">
-            <a href="tel:+78005558628" class="contacts__link">8 800 555-86-28</a>
-          </li>
-          <li class="contacts__item">
-            <a href="mailto:mail@htmlacademy.ru" class="contacts__link">mail@htmlacademy.ru</a>
-          </li>
-        </ul>
-        <ul class="navigation__list socials">
+        <ul class="navigation__list socials list-reset">
           <li class="socials__item">
             <a href="https://www.facebook.com/htmlacademy/" class="socials__link">
               <span class="visually-hidden">Ссылка на фейсбук</span>
@@ -62,25 +61,27 @@
     <main class="main">
 
       <section class="greetings">
-        <h1 class="visually-hidden">Сервис по поиску попутчиков</h1>
-        <h2 class="greetings__title">В путешествие с крутыми попутчиками!</h2>
-        <ul class="greetings__contacts contacts">
-          <li class="contacts__item">
-            <a href="tel:+78005558628" class="contacts__link">
-              <span class="visually-hidden">Позвонить</span>
-            </a>
-          </li>
-          <li class="contacts__item">
-            <a href="mailto:mail@htmlacademy.ru" class="contacts__link">
-              <span class="visually-hidden">Написать письмо</span>
-            </a>
-          </li>
-        </ul>
-        <ul class="navigation__user-actions user-actions">
-          <li class="user-actions__item">
-            <a href="#" class="user-actions__link">Авторизация</a>
-          </li>
-        </ul>
+        <div class="conteiner">
+          <h1 class="visually-hidden">Сервис по поиску попутчиков</h1>
+          <h2 class="greetings__title">В путешествие с крутыми попутчиками!</h2>
+          <ul class="greetings__contacts contacts list-reset">
+            <li class="contacts__item--tel">
+              <a href="tel:+78005558628" class="contacts__link">
+                <span class="visually-hidden">Позвонить</span>
+              </a>
+            </li>
+            <li class="contacts__item--let">
+              <a href="mailto:mail@htmlacademy.ru" class="contacts__link">
+                <span class="visually-hidden">Написать письмо</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="navigation__user-actions user-actions list-reset">
+            <li class="user-actions__item">
+              <a href="#" class="user-actions__link">Авторизация</a>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="quote">
@@ -93,7 +94,7 @@
       </section>
 
       <section class="plan">
-        <ol class="plan__list">
+        <ol class="plan__list list-reset">
           <li class="plan__item">Выберите направление</li>
           <li class="plan__item">Изучите идеи путешественников</li>
           <li class="plan__item">Находите тех, кто похож на вас</li>
@@ -103,11 +104,11 @@
 
       <section class="about-service">
         <h2 class="about-service__title">О сервисе</h2>
-        <p class="about-service__text text--fin">
+        <p class="about-service__text">
           Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
           Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
         </p>
-        <p class="about-service__text text--bold">
+        <p class="about-service__text text text--bold">
           А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
         </p>
       </section>
@@ -119,7 +120,7 @@
           Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
         </p>
 
-          <ul class="directions__list country">
+          <ul class="directions__list country list-reset">
 
             <li class="country__item">
               <img src="img/thailand.svg" alt="Флаг Таиланда" width="35" height="24">
@@ -156,31 +157,31 @@
 
           </ul>
 
-          <button class="directions__button button">Показать все</button>
+          <button class="directions__button button button--yellow button--arrow">Показать все</button>
       </section>
 
       <section class="companion">
         <h2 class="companion__title">Попутчики</h2>
-        <p class="companion__subtitle text--fin">
+        <p class="companion__subtitle">
           Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
           Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
         </p>
-        <p class="companion__subtitle text--bold">
+        <p class="companion__subtitle">
           Теперь можно легко найти единомышленников!
         </p>
 
-          <ul class="companion__list attendant">
+          <ul class="companion__list attendant list-reset">
 
             <li class="attendant__item">
               <div class="attendant__avatar">
-                <img src="img/firsova.png" alt="Таня Фирсова" width="270" height="270">
-                <div class="attendant__level level">
+                <img src="img/firsova.png" alt="Таня Фирсова" width="270" height="270" class="attendant__img">
+                <div class="attendant__level level visually-hidden"> <!--ПОТОМ УДАЛИТЬ-->
                   <p class="level__value">99</p>
                   <p class="level__small">level</p>
                 </div>
               </div>
               <div class="attendant__description">
-                <ul class="attendant__list flags">
+                <ul class="attendant__flags flags list-reset">
                   <li class="flags__item">
                     <img src="img/srilanka.svg" alt="Флаг Шри-Ланки" width="35" height="24">
                   </li>
@@ -191,8 +192,8 @@
                     <img src="img/seychelles.svg" alt="Флаг Сицилии" width="35" height="24">
                   </li>
                 </ul>
-                <h3 class="attendant__user">Таня Фирсова</h3>
-                <ul class="attendant__list hashtags">
+                <h3 class="attendant__user dots">Таня Фирсова</h3>
+                <ul class="attendant__list hashtags list-reset">
                   <li class="hashtags__item">#ЗОЖ</li>
                   <li class="hashtags__item">#ПП</li>
                   <li class="hashtags__item">#Фитнес</li>
@@ -200,17 +201,17 @@
                   <li class="hashtags__item">#авокадо</li>
                   <li class="hashtags__item">#смузи</li>
                 </ul>
-                <div class="attendant__transport">
-                  <div class="attendant__transport__airplane off">
+                <div class="attendant__transport transport">
+                  <div class="transport__airplane">
                     <span class="visually-hidden">Самолет</span>
                   </div>
-                  <div class="attendant__transport__bus on">
+                  <div class="transport__bus transport__off">
                     <span class="visually-hidden">Автобус</span>
                   </div>
-                  <div class="attendant__transport__bike on">
+                  <div class="transport__bike transport__off">
                     <span class="visually-hidden">Велосипед</span>
                   </div>
-                  <div class="attendant__transport__foot on">
+                  <div class="transport__foot transport__off">
                     <span class="visually-hidden">Пешком</span>
                   </div>
                 </div>
@@ -220,13 +221,13 @@
             <li class="attendant__item">
               <div class="attendant__avatar">
                 <img src="img/demin.png" alt="Петя Демин" width="270" height="270">
-                <div class="attendant__level">
-                  <p class="attendant__level__value">99</p>
-                  <p class="attendant__level__small">level</p>
+                <div class="attendant__level level visually-hidden"> <!--ПОТОМ УДАЛИТЬ-->
+                  <p class="level__value">99</p>
+                  <p class="level__small">level</p>
                 </div>
               </div>
               <div class="attendant__description">
-                <ul class="attendant__list flags">
+                <ul class="attendant__flags flags list-reset">
                   <li class="flags__item">
                     <img src="img/belgium.svg" alt="Флаг Бельгии" width="35" height="24">
                   </li>
@@ -234,25 +235,25 @@
                     <img src="img/сzech.svg" alt="Флаг Чехии" width="35" height="24">
                   </li>
                 </ul>
-                <h3 class="attendant__user">Петя Демин</h3>
-                <ul class="attendant__list hashtags">
+                <h3 class="attendant__user dots dots--green">Петя Демин</h3>
+                <ul class="attendant__list hashtags list-reset">
                   <li class="hashtags__item">#бургер</li>
                   <li class="hashtags__item">#бар</li>
                   <li class="hashtags__item">#футбол</li>
                   <li class="hashtags__item">#концерт</li>
                   <li class="hashtags__item">#крафт</li>
                 </ul>
-                <div class="attendant__transport">
-                  <div class="attendant__transport__airplane off">
+                <div class="attendant__transport transport">
+                  <div class="transport__airplane">
                     <span class="visually-hidden">Самолет</span>
                   </div>
-                  <div class="attendant__transport__bus off">
+                  <div class="transport__bus">
                     <span class="visually-hidden">Автобус</span>
                   </div>
-                  <div class="attendant__transport__bike on">
+                  <div class="transport__bike transport__off">
                     <span class="visually-hidden">Велосипед</span>
                   </div>
-                  <div class="attendant__transport__foot off">
+                  <div class="transport__foot">
                     <span class="visually-hidden">Пешком</span>
                   </div>
                 </div>
@@ -260,7 +261,7 @@
             </li>
 
           </ul>
-          <button class="companion__button button">Показать всех</button>
+          <button class="companion__button button button--yellow button--arrow">Показать всех</button>
       </section>
 
       <section class="tariffs">
@@ -269,18 +270,18 @@
           <img src="img/avatar-default.png" alt="Пустая картинка пользователя" height="100" width="100">
         </div>
 
-        <ol class="tariffs__list">
+        <ol class="tariffs__list list-reset">
           <li class="tariffs__item">
             <p class="tariffs__text">Базовое размещение</p>
-            <p class="tariffs__price">Бесплатно</p>
+            <p class="tariffs__text">Бесплатно</p>
           </li>
           <li class="tariffs__item">
             <p class="tariffs__text">Вывод на первых позициях</p>
-            <p class="tariffs__price">99 руб./мес</p>
+            <p class="tariffs__text">99 руб./мес</p>
           </li>
           <li class="tariffs__item">
             <p class="tariffs__text">Кастомный цвет карточки</p>
-            <p class="tariffs__price">59 руб./мес</p>
+            <p class="tariffs__text">59 руб./мес</p>
           </li>
         </ol>
 
@@ -288,8 +289,8 @@
       </section>
 
       <section class="interested">
-        <h2 class="interested__titile">Заинтересовались?</h2>
-        <p class="interested__description">
+        <h2 class="interested__title">Заинтересовались?</h2>
+        <p class="interested__text">
           Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее
           <a href="#" class="interested__link">авторизуйтесь</a>.
         </p>
@@ -300,7 +301,7 @@
           </button>
         </form>
         <p class="interested__text">Остались вопросы? Мы с радостью на них ответим!</p>
-        <ul class="interested__contacts contacts">
+        <ul class="interested__contacts contacts list-reset">
           <li class="contacts__item">
             <a href="tel:+78005558628" class="contacts__link">8 800 555-86-28</a>
           </li>
@@ -325,7 +326,7 @@
       <a href="index.html" class="footer__logo">
         <img src="img/mobile-text-logo.svg" alt="Погнали - путешествие с попутчиками" width="95" height="15">
       </a>
-      <ul class="footer__list socials">
+      <ul class="footer__list socials list-reset">
         <li class="socials__item">
           <a href="https://www.facebook.com/htmlacademy/" class="socials__link">
             <span class="visually-hidden">Ссылка на фейсбук</span>

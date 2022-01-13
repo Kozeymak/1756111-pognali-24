@@ -1,0 +1,20 @@
+.form {
+  &__label,
+  &__span {
+    color: $basic-blue-light;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__textarea,
+  &__list {
+    color: $special-grey;
+    font-weight: 400;
+    line-height: 18px;
+    border: 1px solid $special-grey-light;
+    border-radius: 10px;
+    background-color: $special-blue-light-2;
+  }
+}

@@ -1,0 +1,18 @@
+.companion {
+  background-color: $basic-blue-dark;
+
+  &__title {
+    color: $special-orange;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  &__subtitle {
+    color: $pure-white;
+  }
+
+  &__button {
+    margin: 20px auto 31px auto; //TODO стили не работают
+  }
+}

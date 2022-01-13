@@ -1,0 +1,8 @@
+.category {
+  &__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 18px;
+    color: $basic_blue_light;
+  }
+}

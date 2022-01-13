@@ -1,0 +1,19 @@
+.routes {
+  &__title {
+    font-family: $font;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.09em;
+    background-color: $pure-white;
+    border: 1px solid $special-grey-light;
+    border-radius: 4px;
+    color: $basic-blue-black;
+  }
+
+  &__flag {
+    border: 1px solid $special-grey-light;
+    border-radius: 4px;
+  }
+}

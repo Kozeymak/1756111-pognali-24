@@ -1,0 +1,17 @@
+.address {
+  background-color: $basic-yellow;
+
+  &__contacts {
+    color: $basic-blue-black;
+    font-weight: 700;
+  }
+
+  &__link {
+    color: $basic-blue-black;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    background-color: $basic-yellow;
+    border: 1px solid $pure-black;
+  }
+}

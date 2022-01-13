@@ -1,0 +1,13 @@
+.user-actions {
+  &__item {
+    background-color: $basic-yellow;
+  }
+
+  &__link {
+    color: $basic-blue;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+  }
+}

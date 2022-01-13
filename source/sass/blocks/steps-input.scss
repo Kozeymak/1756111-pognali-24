@@ -1,0 +1,28 @@
+.steps-input {
+  &__text {
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.09em;
+
+    &--light {
+      opacity: 0.3;
+    }
+  }
+
+  &__counter {
+    border: 1px solid $special-grey-light;
+    border-radius: 4px;
+  }
+
+  &__control {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 14px;
+    border: none;
+  }
+
+  &__button {
+    border: none;
+  }
+}
