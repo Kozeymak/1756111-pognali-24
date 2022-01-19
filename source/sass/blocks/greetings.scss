@@ -1,5 +1,4 @@
 .greetings {
-
   background-color: $basic-blue-dark;
 
   &__title {
@@ -8,5 +7,14 @@
     font-weight: 700;
     line-height: 40px;
     text-align: center;
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }

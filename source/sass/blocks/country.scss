@@ -1,6 +1,9 @@
 .country {
   &__card {
     background-color: $pure-white;
+    margin-top: -20px;
+    padding: 26px 45px 0 24px;
+    border-radius: 10px;
   }
 
   &__title {
@@ -14,13 +17,57 @@
     color: $special-grey;
     font-weight: 500;
     line-height: 18px;
-    opacity: 30%;
+    opacity: 0.3;
   }
 
   &__persons {
     color: $basic-blue-dark;
     font-weight: 500;
     line-height: 20px;
-    opacity: 30%;
+    opacity: 0.3;
+
+    &::before {
+      content: "";
+      background-image: url("../../img/icon_user.svg");
+      width: 14px;
+      height: 14px;
+      background-size: cover;
+      margin-right: 6px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  &__item {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0 auto;
+
+    & + & {
+      margin-top: 10px;
+    }
+
+    @media (min-width: $tablet-width) {
+      flex-direction: row-reverse;
+      margin: 0 70px; //TODO тут какая то беда с карточками, я не понимаю
+    }
+  }
+
+  &__flag {
+    position: absolute;
+    top: 86px;
+    left: 25px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }

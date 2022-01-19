@@ -1,13 +1,31 @@
 .user-actions {
-  &__item {
-    background-color: $basic-yellow;
+  &__link {
+    color: $basic-blue-light-2;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    line-height: 18px;
   }
 
-  &__link {
-    color: $basic-blue;
+  &__button {
     font-size: 17px;
     font-weight: 700;
-    line-height: 20px;
+    line-height: 30px;
     text-align: center;
+    border-radius: 25px;
+    text-transform: uppercase;
+    width: 270px;
+    height: 50px;
+
+    &--min {
+      width: 190px;
+      height: 40px;
+      text-transform: uppercase;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px;
+      border-radius: 25px;
+    }
   }
 }

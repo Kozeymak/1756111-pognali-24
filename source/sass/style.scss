@@ -3,6 +3,10 @@
 @import "global/fonts.scss";
 @import "global/list-reset.scss";
 @import "global/visually-hidden.scss";
+@import "global/button.scss";
+@import "blocks/text.scss";
+@import "blocks/links.scss";
+@import "blocks/title.scss";
 @import "blocks/header.scss";
 @import "blocks/conteiner.scss";
 @import "global/body.scss";
@@ -16,7 +20,6 @@
 @import "blocks/directions.scss";
 @import "blocks/contents.scss";
 @import "blocks/country.scss";
-@import "global/button.scss";
 @import "blocks/companion.scss";
 @import "blocks/attendant.scss";
 @import "blocks/hashtags.scss";
@@ -47,4 +50,5 @@
 @import "blocks/company.scss";
 @import "blocks/dots.scss";
 @import "blocks/transport.scss";
-@import "blocks/text.scss";
+@import "blocks/map.scss";
+@import "blocks/navigation.scss";

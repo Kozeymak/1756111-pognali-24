@@ -1,18 +1,40 @@
 .companion {
   background-color: $basic-blue-dark;
 
+  &__list {
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
+
+    @media (min-width: $tablet-desktop) {
+      order: 4;
+    }
+  }
+
   &__title {
-    color: $special-orange;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 24px;
+    @media (min-width: $tablet-desktop) {
+      order: 1;
+    }
   }
 
   &__subtitle {
     color: $pure-white;
+
+    @media (min-width: $tablet-desktop) {
+      order: 2;
+    }
   }
 
   &__button {
-    margin: 20px auto 31px auto; //TODO стили не работают
+    margin: 20px auto 0 auto;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 70px;
+      min-width: 618px;
+    }
+
+    @media (min-width: $tablet-desktop) {
+      order: 4;
+    }
   }
 }
