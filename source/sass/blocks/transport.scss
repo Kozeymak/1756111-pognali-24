@@ -1,0 +1,29 @@
+.transport {
+  &__airplane {
+    background-image: url("../../img/icon_plane.svg");
+    width: 21px;
+    height: 21px;
+  }
+
+  &__bus {
+    background-image: url("../../img/icon_bus.svg");
+    width: 17px;
+    height: 19px;
+  }
+
+  &__bike {
+    background-image: url("../../img/icon_bike.svg");
+    width: 24px;
+    height: 24px;
+  }
+
+  &__foot {
+    background-image: url("../../img/icon_foot.svg");
+    width: 21px;
+    height: 23px;
+  }
+
+  &__off {
+    opacity: 0.15;
+  }
+}

@@ -1,9 +1,36 @@
 .footer {
   background-color: $pure-white;
+  padding: 37px 25px 18px 25px;
+  border-radius: 25px 25px 0 0;
+  margin-top: -25px;
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 
   &__text {
     color: $special-grey;
     font-weight: 400;
     line-height: 16px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 37px;
+  }
+
+  &__developed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 13px;
+    border-top: 1px solid $special-grey-light-4;
   }
 }

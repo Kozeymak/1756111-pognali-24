@@ -6,4 +6,8 @@
     text-transform: uppercase;
     color: $basic_blue_light;
   }
+
+  &__item + &__item {
+    padding-left: 20px;
+  }
 }

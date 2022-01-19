@@ -18,17 +18,24 @@
     border-radius: 12px;
   }
 
-  &--yellow-arrow {
-    width: 270px;
-    height: 60px;
+  &--yellow {
     background-color: $basic-yellow;
+  }
+
+  &--arrow {
+    width: 270px;
+    padding: 20px 23px;
+    justify-content: space-between;
+    border-radius: 10px;
+    display: flex;
 
     &::after {
+      content: "";
       width: 0;
       height: 0;
       border-style: solid;
-      border-width: 7px 0 7px 14px;
-      border-color: transparent transparent transparent #000000;
-    } //TODO посмотри пожалуйста, почему не работает
+      border-width: 6.5px 0 6.5px 13px;
+      border-color: transparent transparent transparent $basic-blue-light;
+    }
   }
 }

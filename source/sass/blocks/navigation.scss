@@ -1,1 +1,29 @@
-//
+.navigation {
+  &__toggle {
+    width: 25px;
+    height: 18px;
+    background-image: url("../../img/icon_menu_mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__wrapper {
+    background-color: $pure-white;
+    display: none;
+  }
+
+  &__link {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $basic-blue-light-2;
+    display: block;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+  }
+}

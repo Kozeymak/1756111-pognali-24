@@ -1,21 +1,36 @@
 .tariffs {
   background-color: $backgound-color-2;
 
-  &__title {
-    color: $special-orange;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 24px;
-  }
-
   &__item {
     color: $special-grey;
     line-height: 16px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+
+    &:first-child {
+      border-top: 1px solid $special-grey-2;
+      border-bottom: 1px solid $special-grey-2;
+    }
+  }
+
+  &__item + &__item {
+    border-bottom: 1px solid $special-grey-2;
   }
 
   &__link {
     color: $special-blue;
     font-weight: 700;
     line-height: 16px;
+    margin: 31px auto 38px auto; //TODO Стили не работают
+  }
+
+  &__text {
+    line-height: 16px;
+    margin: 0;
+  }
+
+  &__text + &__text {
+    margin-bottom: 6px;
   }
 }
