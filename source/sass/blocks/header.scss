@@ -1,3 +1,12 @@
 .header {
-  background-color: $basic-blue-light;
+  background-color: $basic-blue-dark;
+  padding: 19px 26px 0 26px;
+  display: grid;
+  grid-template-columns: (auto, 25px); //TODO из за того что блок с кнопкой существует, очень непонятно как отрегулировать отступы, ощущение, что тут сделано неправильно
+  grid-template-rows: 1fr;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

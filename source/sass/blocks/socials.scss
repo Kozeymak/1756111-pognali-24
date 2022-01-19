@@ -1,5 +1,27 @@
 .socials {
-  &__item {
+  &__link {
+    display: flex;
     background-color: $basic-yellow;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--facebook {
+    background-image: url("../../img/socials-face.svg");
+  }
+
+  &--vk {
+    background-image: url("../../img/socials-vksvg.svg");
+  }
+
+  &--instagram {
+    background-image: url("../../img/socials-inst.svg");
+  }
+
+  &--white {
+    background-color: $pure-white;
   }
 }

@@ -1,11 +1,68 @@
 .plan {
   background-color: $basic-blue-light-2;
 
-  &__item {
+  &__list {
+    width: 270px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $tablet-width) {
+      width: auto;
+      margin: 0 40px;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 60px;
+    }
+  }
+
+  &__text {
     color: $basic-blue;
     font-size: 18px;
     font-weight: 700;
     line-height: 18px;
+    width: 150px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+
+  &__item {
+    margin-top: -10px;
+    padding: 22px 21px 34px 24px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-width: $tablet-width) {
+      min-width: 50%;
+      flex-direction: column;
+      border-radius: 0;
+      margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      min-width: 25%;
+    }
+  }
+
+  &__item:first-child {
+    margin-top: 0;
+  }
+
+  &__item:last-child {
+    border-radius: 10px;
+    padding-bottom: 24px;
+
+    @media (min-width: $tablet-width) {
+      border-radius: 0;
+    }
   }
 
   &__item:nth-child(4n+1) {
@@ -22,5 +79,38 @@
 
   &__item:nth-child(4n+4) {
     background-color: $basic-yellow;
+  }
+
+  &__item::after {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    color: $pure-white;
+
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      line-height: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+
+  &__item:nth-of-type(1)::after {
+    content: "1";
+  }
+
+  &__item:nth-of-type(2)::after {
+    content: "2";
+  }
+
+  &__item:nth-of-type(3)::after {
+    content: "3";
+  }
+
+  &__item:nth-of-type(4)::after {
+    content: "4";
   }
 }

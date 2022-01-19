@@ -1,16 +1,8 @@
 .contacts {
-  &__item {
-    &--tel {
-      background-color: $special-orange;
-    }
-
-    &--let {
-      background-color: $basic-yellow-dark;
-    }
-
-    &__link {
-      color: $basic-yellow;
-      font-weight: 700;
-    }
+  &__link {
+    color: $basic-yellow;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
   }
 }

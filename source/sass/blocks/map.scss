@@ -1,0 +1,13 @@
+.map {
+  position: relative;
+
+  &__point {
+    display: block;
+    background-image: url("../../img/icon_map.svg");
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 148px;
+    left: 158px;
+  }
+}

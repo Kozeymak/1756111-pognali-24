@@ -1,0 +1,43 @@
+.links {
+  &--call {
+    background-color: $special-orange;
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 100%;
+    background-image: url("../../img/icon_call.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--letter {
+    background-color: $basic-yellow-dark;
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 100%;
+    background-image: url("../../img/icon_letter.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--icon::before {
+    content: "";
+    width: 45px;
+    height: 45px;
+    background-color: $basic-blue;
+    display: block;
+    border-radius: 100%;
+    margin-right: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--number::before {
+    background-image: url("../../img/icon_telephone-orange.svg");
+  }
+
+  &--mail::before {
+    background-image: url("../../img/icon_mail-orange.svg");
+  }
+}

@@ -2,16 +2,21 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
     <title>HTML Academy: Погнали</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="body">
     <header class="header">
       <a href="index.html" class="header__logo">
-        <img src="img/mobile-text-logo.svg" alt="Погнали - путешествие с попутчиками" width="96" height="15" class="header__logo--image">
+        <picture>
+          <source srcset="img/logo_big.svg" media="(min-width: 1440px)" />
+          <source srcset="img/logo_full.svg" media="(min-width: 768px)" /><!--TODO помоги настроить лого-->
+          <img src="img/mobile-text-logo.svg" srcset="img/logo_full.svg 768w" alt="Погнали - путешествие с попутчиками" width="96" height="15" class="header__logo--image">
+        </picture>
       </a>
-      <nav class="navigation visually-hidden"> <!--ПОТОМ УДАЛИТЬ ВХ-->
-        <button class="navigation__toggle open close" type="button">
+      <nav class="navigation">
+        <button class="navigation__toggle button" type="button">
           <span class="visually-hidden">Меню</span>
         </button>
         <div class="navigation__wrapper">
@@ -26,62 +31,59 @@
               <a href="catalog.html" class="navigation__link">Попутчики</a>
             </li>
           </ul>
+          <ul class="navigation__user-actions user-actions list-reset">
+            <li class="user-actions__item">
+              <a href="#" class="user-actions__button button button--yellow">Авторизация</a>
+            </li>
+            <li class="user-actions__item">
+              <a href="tel:+78005558628" class="user-actions__link links links--icon links--number">8 800 555-86-28</a>
+            </li>
+            <li class="user-actions__item">
+              <a href="mailto:mail@htmlacademy.ru" class="user-actions__link links links--icon links--mail">mail@htmlacademy.ru</a>
+            </li>
+          </ul>
+          <ul class="navigation__socials socials list-reset">
+            <li class="socials__item">
+              <a href="https://www.facebook.com/htmlacademy/" class="socials__link socials--facebook socials--white">
+                <span class="visually-hidden">Ссылка на фейсбук</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="https://vk.com/htmlacademy" class="socials__link socials--vk socials--white">
+                <span class="visually-hidden">Ссылка на вконтакте</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="https://www.instagram.com/htmlacademy/" class="socials__link socials--instagram socials--white">
+                <span class="visually-hidden">Ссылка на инстаграм</span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul class="navigation__user-actions user-actions list-reset">
-          <li class="user-actions__item">
-            <a href="tel:+78005558628" class="contacts__link">8 800 555-86-28</a>
-          </li>
-          <li class="user-actions__item">
-            <a href="mailto:mail@htmlacademy.ru" class="contacts__link">mail@htmlacademy.ru</a>
-          </li>
-          <li class="user-actions__item">
-            <a href="#" class="user-actions__link">Авторизация</a>
-          </li>
-        </ul>
-        <ul class="navigation__list socials list-reset">
-          <li class="socials__item">
-            <a href="https://www.facebook.com/htmlacademy/" class="socials__link">
-              <span class="visually-hidden">Ссылка на фейсбук</span>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a href="https://vk.com/htmlacademy" class="socials__link">
-              <span class="visually-hidden">Ссылка на вконтакте</span>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a href="https://www.instagram.com/htmlacademy/" class="socials__link">
-              <span class="visually-hidden">Ссылка на инстаграм</span>
-            </a>
-          </li>
-        </ul>
       </nav>
     </header>
 
     <main class="main">
 
       <section class="greetings">
-        <div class="conteiner">
           <h1 class="visually-hidden">Сервис по поиску попутчиков</h1>
           <h2 class="greetings__title">В путешествие с крутыми попутчиками!</h2>
+          <img src="img/traveller-illustration-mobile.png" alt="Человек с чемоданом" width="192" height="255">
           <ul class="greetings__contacts contacts list-reset">
-            <li class="contacts__item--tel">
-              <a href="tel:+78005558628" class="contacts__link">
+            <li class="contacts__item">
+              <a href="tel:+78005558628" class="contacts__link links links--call">
                 <span class="visually-hidden">Позвонить</span>
               </a>
             </li>
-            <li class="contacts__item--let">
-              <a href="mailto:mail@htmlacademy.ru" class="contacts__link">
+            <li class="contacts__item">
+              <a href="mailto:mail@htmlacademy.ru" class="contacts__link links links--letter">
                 <span class="visually-hidden">Написать письмо</span>
               </a>
             </li>
-          </ul>
-          <ul class="navigation__user-actions user-actions list-reset">
-            <li class="user-actions__item">
-              <a href="#" class="user-actions__link">Авторизация</a>
+            <li class=" contacts__item user-actions__item">
+              <a href="#" class="user-actions__button--min button button--yellow">Авторизация</a>
             </li>
           </ul>
-        </div>
       </section>
 
       <section class="quote">
@@ -95,15 +97,23 @@
 
       <section class="plan">
         <ol class="plan__list list-reset">
-          <li class="plan__item">Выберите направление</li>
-          <li class="plan__item">Изучите идеи путешественников</li>
-          <li class="plan__item">Находите тех, кто похож на вас</li>
-          <li class="plan__item">Путешествуйте вместе!</li>
+          <li class="plan__item">
+            <p class="plan__text">Выберите направление</p>
+          </li>
+          <li class="plan__item">
+            <p class="plan__text">Изучите идеи путешественников</p>
+          </li>
+          <li class="plan__item">
+            <p class="plan__text">Находите тех, кто&nbsp;похож на вас</p>
+          </li>
+          <li class="plan__item">
+            <p class="plan__text">Путешествуйте вместе!</p>
+          </li>
         </ol>
       </section>
 
       <section class="about-service">
-        <h2 class="about-service__title">О сервисе</h2>
+        <h2 class="about-service__title title title--orange">О сервисе</h2>
         <p class="about-service__text">
           Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
           Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
@@ -111,10 +121,11 @@
         <p class="about-service__text text text--bold">
           А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
         </p>
+        <button class="about-service__button button button--yellow button--arrow">Подробнее</button>
       </section>
 
       <section class="directions">
-        <h2 class="directions__title">Направления</h2>
+        <h2 class="directions__title title title--orange">Направления</h2>
         <p class="directions__text">
           Мы не продаем туры и ничего не рекламируем.
           Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
@@ -123,35 +134,44 @@
           <ul class="directions__list country list-reset">
 
             <li class="country__item">
-              <img src="img/thailand.svg" alt="Флаг Таиланда" width="35" height="24">
+              <div class="country__landscape">
+                <img src="img/thailand-mobile.svg" alt="Пейзаж Тайланда" width="270" height="110" class="country__img">
+              </div>
+              <img src="img/thailand.svg" alt="Флаг Таиланда" width="35" height="24" class="country__flag">
               <div class="country__card">
                 <div class="country__description">
                   <h3 class="country__title">Таиланд</h3>
-                  <p class="country__subtitle">Джунгли зовут!</p>
+                  <p class="country__persons">18321</p>
                 </div>
-                <p class="country__persons">18321</p>
+                <p class="country__subtitle">Джунгли зовут!</p>
               </div>
             </li>
 
             <li class="country__item">
-              <img src="img/france.svg" alt="Флаг Франции" width="35" height="24">
+              <div class="country__landscape">
+                <img src="img/france-mobile.svg" alt="Пейзаж Франции" width="270" height="110" class="country__img">
+              </div>
+              <img src="img/france.svg" alt="Флаг Франции" width="35" height="24" class="country__flag">
               <div class="country__card">
                 <div class="country__description">
                   <h3 class="country__title">Франция</h3>
-                  <p class="country__subtitle">Трэ бьен, манифик!!</p>
+                  <p class="country__persons">12518</p>
                 </div>
-                <p class="country__persons">12518</p>
+                <p class="country__subtitle">Трэ бьен, манифик!!</p>
               </div>
             </li>
 
             <li class="country__item">
-              <img src="img/сzech.svg" alt="Флаг Чехии" width="35" height="24">
+              <div class="country__landscape">
+                <img src="img/czech-mobile.svg" alt="Пейзаж Чехии" width="270" height="110" class="country__img">
+              </div>
+              <img src="img/сzech.svg" alt="Флаг Чехии" width="35" height="24" class="country__flag">
               <div class="country__card">
                 <div class="country__description">
                   <h3 class="country__title">Чехия</h3>
-                  <p class="country__subtitle">Закоулки старой Европы</p>
+                  <p class="country__persons">5326</p>
                 </div>
-                <p class="country__persons">5326</p>
+                <p class="country__subtitle">Закоулки старой Европы</p>
               </div>
             </li>
 
@@ -161,12 +181,12 @@
       </section>
 
       <section class="companion">
-        <h2 class="companion__title">Попутчики</h2>
+        <h2 class="companion__title title title--orange">Попутчики</h2>
         <p class="companion__subtitle">
           Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
           Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
         </p>
-        <p class="companion__subtitle">
+        <p class="companion__subtitle text text--bold">
           Теперь можно легко найти единомышленников!
         </p>
 
@@ -175,7 +195,7 @@
             <li class="attendant__item">
               <div class="attendant__avatar">
                 <img src="img/firsova.png" alt="Таня Фирсова" width="270" height="270" class="attendant__img">
-                <div class="attendant__level level visually-hidden"> <!--ПОТОМ УДАЛИТЬ-->
+                <div class="attendant__level level level--99">
                   <p class="level__value">99</p>
                   <p class="level__small">level</p>
                 </div>
@@ -221,8 +241,8 @@
             <li class="attendant__item">
               <div class="attendant__avatar">
                 <img src="img/demin.png" alt="Петя Демин" width="270" height="270">
-                <div class="attendant__level level visually-hidden"> <!--ПОТОМ УДАЛИТЬ-->
-                  <p class="level__value">99</p>
+                <div class="attendant__level level level--80">
+                  <p class="level__value">80</p>
                   <p class="level__small">level</p>
                 </div>
               </div>
@@ -265,7 +285,7 @@
       </section>
 
       <section class="tariffs">
-        <h2 class="tariffs__title">Добавьте свой профиль</h2>
+        <h2 class="tariffs__title title title--orange">Добавьте свой профиль</h2>
         <div class="tariffs__avatar">
           <img src="img/avatar-default.png" alt="Пустая картинка пользователя" height="100" width="100">
         </div>
@@ -289,56 +309,57 @@
       </section>
 
       <section class="interested">
-        <h2 class="interested__title">Заинтересовались?</h2>
+        <h2 class="interested__title title title--orange">Заинтересовались?</h2>
         <p class="interested__text">
           Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее
           <a href="#" class="interested__link">авторизуйтесь</a>.
         </p>
         <form class="interested__form">
           <input type="email" placeholder="E-mail" class="interested__input">
-          <button type="submit" class="interested__button">
+          <button type="submit" class="interested__button button button--yellow button--arrow">
             <span class="visually-hidden">Отправить</span>
           </button>
         </form>
         <p class="interested__text">Остались вопросы? Мы с радостью на них ответим!</p>
         <ul class="interested__contacts contacts list-reset">
           <li class="contacts__item">
-            <a href="tel:+78005558628" class="contacts__link">8 800 555-86-28</a>
+            <a href="tel:+78005558628" class="contacts__link links links--icon links--number">8 800 555-86-28</a>
           </li>
           <li class="contacts__item">
-            <a href="mailto:mail@htmlacademy.ru" class="contacts__link">mail@htmlacademy.ru</a>
+            <a href="mailto:mail@htmlacademy.ru" class="contacts__link links links--icon links--mail">mail@htmlacademy.ru</a>
           </li>
         </ul>
       </section>
 
       <section class="address">
-          <address class="address__contacts">ул. Большая Конюшенная, 19/8</address>
-          <a href="#" class="address__link">Проложить маршрут</a>
-          <img src="img/map.png" alt="Расположение">
-          <svg>
-            <circle r="30" cx="100" cy="100" fill="#fff"/>
-            <circle r="10" cx="100" cy="100" fill="#000"/>
-          </svg>
+          <address class="address__contacts">ул. Большая Конюшенная,&nbsp;19/8</address>
+          <a href="#" class="address__link button button--arrow">Проложить маршрут</a>
+      </section>
+
+      <section class="map">
+        <img src="img/map.png" alt="Расположение" class="map__img">
+        <div class="map__point"> </div>
       </section>
     </main>
 
     <footer class="footer">
       <a href="index.html" class="footer__logo">
-        <img src="img/mobile-text-logo.svg" alt="Погнали - путешествие с попутчиками" width="95" height="15">
+        <img src="img/logo_black.svg" alt="Погнали - путешествие с попутчиками" width="96" height="15">
       </a>
-      <ul class="footer__list socials list-reset">
+
+      <ul class="footer__list socials list-reset"> <!--TODO не понимаю как один блок засунуть внутрь другого -->
         <li class="socials__item">
-          <a href="https://www.facebook.com/htmlacademy/" class="socials__link">
+          <a href="https://www.facebook.com/htmlacademy/" class="socials__link socials--facebook">
             <span class="visually-hidden">Ссылка на фейсбук</span>
           </a>
         </li>
         <li class="socials__item">
-          <a href="https://vk.com/htmlacademy" class="socials__link">
+          <a href="https://vk.com/htmlacademy" class="socials__link socials--vk">
             <span class="visually-hidden">Ссылка на вконтакте</span>
           </a>
         </li>
         <li class="socials__item">
-          <a href="https://www.instagram.com/htmlacademy/" class="socials__link">
+          <a href="https://www.instagram.com/htmlacademy/" class="socials__link socials--instagram">
             <span class="visually-hidden">Ссылка на инстаграм</span>
           </a>
         </li>
